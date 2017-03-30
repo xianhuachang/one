@@ -1,0 +1,242 @@
+2016-09-03 14:23:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472883966</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 14:23:41 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 14:23:41 response :
+------------
+
+2016-09-03 15:55:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472889500</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=3&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 15:55:55 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 15:55:55 response :
+------------
+
+2016-09-03 16:08:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472890274</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:08:49 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:08:49 response :
+------------
+
+2016-09-03 16:50:35 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472892780</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=2&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:50:35 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:50:35 response :
+------------
+
+2016-09-03 16:53:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472892978</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:53:53 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:53:53 response :
+------------
+
+2016-09-03 16:55:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472893053</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:55:07 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:55:07 response :
+------------
+
+2016-09-03 16:56:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472893132</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:56:27 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:56:27 response :
+------------
+
+2016-09-03 16:59:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472893291</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 16:59:06 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 16:59:06 response :
+------------
+
+2016-09-03 17:25:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472894850</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=2&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 17:25:05 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 17:25:05 response :
+------------
+
+2016-09-03 17:51:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472896425</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 17:51:22 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 17:51:22 response :
+------------
+
+2016-09-03 17:51:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1472896458</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&id=1&do=detail&m=news&wxref=mp.weixin.qq.com#wechat_redirect]]></EventKey>
+<MenuId>523914550</MenuId>
+</xml>
+
+2016-09-03 17:51:53 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-09-03 17:51:53 response :
+------------
+

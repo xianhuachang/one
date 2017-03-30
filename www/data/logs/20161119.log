@@ -1,0 +1,22 @@
+2016-11-19 15:21:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wuUDDS_BM0G-CbKx2umOImU]]></FromUserName>
+<CreateTime>1479540290</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>526570231</MenuId>
+</xml>
+
+2016-11-19 15:21:15 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-11-19 15:21:15 response :
+------------
+

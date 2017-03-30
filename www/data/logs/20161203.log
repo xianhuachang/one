@@ -1,0 +1,88 @@
+2016-12-03 12:17:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wrLtYB709QBg4YRSmNeL-ic]]></FromUserName>
+<CreateTime>1480738864</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>526570231</MenuId>
+</xml>
+
+2016-12-03 12:17:27 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-03 12:17:27 response :
+------------
+
+2016-12-03 12:18:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wrLtYB709QBg4YRSmNeL-ic]]></FromUserName>
+<CreateTime>1480738923</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>526570231</MenuId>
+</xml>
+
+2016-12-03 12:18:25 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-03 12:18:25 response :
+------------
+
+2016-12-03 13:46:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wrLtYB709QBg4YRSmNeL-ic]]></FromUserName>
+<CreateTime>1480744199</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>526570231</MenuId>
+</xml>
+
+2016-12-03 13:46:22 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-03 13:46:22 response :
+------------
+
+2016-12-03 13:48:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wrLtYB709QBg4YRSmNeL-ic]]></FromUserName>
+<CreateTime>1480744301</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>526570231</MenuId>
+</xml>
+
+2016-12-03 13:48:04 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-03 13:48:04 response :
+------------
+

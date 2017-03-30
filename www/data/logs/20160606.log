@@ -1,0 +1,198 @@
+2016-06-06 14:48:36 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuBKdatc9aNRfhTK2JdnRdPk]]></FromUserName>
+<CreateTime>1465195807</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 14:48:36 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 14:48:36 response :
+------------
+
+2016-06-06 14:48:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuBKdatc9aNRfhTK2JdnRdPk]]></FromUserName>
+<CreateTime>1465195815</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 14:48:44 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 14:48:44 response :
+------------
+
+2016-06-06 16:41:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuKaRHhjkTKjxggqjoJhRMlU]]></FromUserName>
+<CreateTime>1465202564</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 16:41:15 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 16:41:15 response :
+------------
+
+2016-06-06 16:41:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuKaRHhjkTKjxggqjoJhRMlU]]></FromUserName>
+<CreateTime>1465202588</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 16:41:37 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 16:41:37 response :
+------------
+
+2016-06-06 16:41:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuKaRHhjkTKjxggqjoJhRMlU]]></FromUserName>
+<CreateTime>1465202606</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 16:41:55 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 16:41:55 response :
+------------
+
+2016-06-06 17:34:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuHDiAY1Rq32qQGfOn_-194s]]></FromUserName>
+<CreateTime>1465205770</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 17:34:38 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 17:34:38 response :
+------------
+
+2016-06-06 20:44:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuHG4dEomoWNwUbVDBlzqzk8]]></FromUserName>
+<CreateTime>1465217176</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 20:44:45 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 20:44:45 response :
+------------
+
+2016-06-06 20:48:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuKW8CZ-hfZc-aIsCVFj5GXc]]></FromUserName>
+<CreateTime>1465217399</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 20:48:42 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 20:48:42 response :
+------------
+
+2016-06-06 20:50:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_5013f37369ce]]></ToUserName>
+<FromUserName><![CDATA[oqCObuKW8CZ-hfZc-aIsCVFj5GXc]]></FromUserName>
+<CreateTime>1465217500</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd]]></EventKey>
+<MenuId>208007648</MenuId>
+</xml>
+
+2016-06-06 20:50:09 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-06-06 20:50:09 response :
+------------
+

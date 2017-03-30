@@ -1,0 +1,560 @@
+2017-01-25 09:36:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485308550</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-01-25 09:37:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485308594</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-01-25 09:37:13 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-01-25 09:37:13 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-01-25 09:37:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485308594</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-01-25 09:37:18 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-01-25 09:37:18 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-01-25 09:37:26 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485308594</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-01-25 09:37:26 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-01-25 09:37:26 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-01-25 10:06:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485310371</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:06:50 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:06:50 response :
+------------
+
+2017-01-25 10:07:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485310398</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:07:18 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:07:18 response :
+------------
+
+2017-01-25 10:23:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485311359</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:23:19 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:23:19 response :
+------------
+
+2017-01-25 10:25:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485311507</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:25:47 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:25:47 response :
+------------
+
+2017-01-25 10:25:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485311519</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:25:58 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:25:58 response :
+------------
+
+2017-01-25 10:26:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485311526</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:26:06 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:26:06 response :
+------------
+
+2017-01-25 10:33:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485311993</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 10:33:52 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 10:33:52 response :
+------------
+
+2017-01-25 15:12:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485328736</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 15:12:58 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 15:12:58 response :
+------------
+
+2017-01-25 15:35:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485330073</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 15:35:15 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 15:35:15 response :
+------------
+
+2017-01-25 15:49:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485330939</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 15:49:41 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 15:49:41 response :
+------------
+
+2017-01-25 15:51:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485331047</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 15:51:29 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 15:51:29 response :
+------------
+
+2017-01-25 16:14:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485332424</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:14:27 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:14:27 response :
+------------
+
+2017-01-25 16:14:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485332437</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:14:40 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:14:40 response :
+------------
+
+2017-01-25 16:50:15 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485334572</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:50:15 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:50:15 response :
+------------
+
+2017-01-25 16:50:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485334578</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:50:21 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:50:21 response :
+------------
+
+2017-01-25 16:52:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485334726</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:52:49 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:52:49 response :
+------------
+
+2017-01-25 16:53:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485334744</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:53:07 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:53:07 response :
+------------
+
+2017-01-25 16:53:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485334771</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:53:34 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:53:34 response :
+------------
+
+2017-01-25 16:54:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485334801</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:54:04 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:54:04 response :
+------------
+
+2017-01-25 16:54:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wgmaqIL_VPFQSEHCTYz3YZ0]]></FromUserName>
+<CreateTime>1485334805</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:54:08 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:54:08 response :
+------------
+
+2017-01-25 16:54:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wmbIlTY7SRkEutXpawKwCeE]]></FromUserName>
+<CreateTime>1485334808</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-25 16:54:11 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-25 16:54:11 response :
+------------
+

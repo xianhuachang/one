@@ -1,0 +1,17 @@
+<ul class="nav nav-pills nav-stacked" style="float: left;  margin-left: 25px;min-width: 100px;">
+	{loop $parts $index $item}
+	<li role="presentation">
+		<a class="symptomurl" href="{php echo $this->createMobileUrl($do,array('pid'=>$item['id'],'t'=>$t))}#page_{$index}">
+			{if $t==1 && $item['name']=="胸部"}
+			心肺
+			{else}
+			 {$item['name']}
+			{/if}
+			{if $item['count'] <>0 }
+				<span class='badge'>{$item['count']}</span>
+			{else}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			{/if}
+		</a>
+	</li>
+	{/loop}
+</ul>

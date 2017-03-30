@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\gcy.jpg"><img alt="郭彩云" src="..\img\gcy.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我以前的皮肤看起来比周边的朋友黄很多，感觉就像小黄人。美丽天使的医生帮我做检查后，我才知道原来是因为小时候吃中药过多，导致了一些色素在身体沉淀形成的。由于先天体质的影响，吃了酵果菜谱三个月甚至到六个月，我的皮肤仍然没有变白，但是油性皮肤的我油脂减少了，毛孔变小了，皮肤细腻了。皮肤变好了，自我感觉也跟着变好了！
+<br />
+<br />
+
+<span style="float:right;">——郭彩云 女 23 前台<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/gcy1.png"><img src="images/gcy1s.png" /></a>
+    <a id="example3" href="images/gcy2.png"><img src="images/gcy2s.png" /></a>
+    <a id="example4" href="images/gcy3.png"><img src="images/gcy3s.png" /></a>
+    <a id="example5" href="images/gcy4.png"><img src="images/gcy4s.png" /></a>
+    <a id="example6" href="images/gcy5.png"><img src="images/gcy5s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example5").imgbox();
+	$("#example6").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

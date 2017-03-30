@@ -1,0 +1,23 @@
+2016-07-22 08:51:36 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1469148696</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[自诊]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-22 08:51:36 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 15 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-22 08:51:36 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

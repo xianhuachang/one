@@ -1,0 +1,174 @@
+2015-10-10 13:56:04 trace :
+------------
+Array:
+from : oqCObuESFzUUGTRJXoD2h3G6jxgk ;
+to : gh_5013f37369ce ;
+time : 1444456561 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuESFzUUGTRJXoD2h3G6jxgk ;
+createtime : 1444456561 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-10-10 13:56:04 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-10-10 13:56:04 response :
+------------
+Array:
+FromUserName : gh_5013f37369ce ;
+ToUserName : oqCObuESFzUUGTRJXoD2h3G6jxgk ;
+MsgType : text ;
+Content : 您好，我是欧歌🚶，致力于细胞级护理品牌28days宣传推广，这里是欧歌开发专用号，如需关注🎯官方服务号，请搜索28days唯一官方微信号🌺“i28days”🌺关注。 ;
+
+2015-10-10 17:52:50 trace :
+------------
+Array:
+from : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+to : gh_dcf2122dab58 ;
+time : 1444470769 ;
+type : text ;
+event :  ;
+tousername : gh_dcf2122dab58 ;
+fromusername : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+createtime : 1444470769 ;
+msgtype : text ;
+content : 你好 ;
+msgid : 6203954713093524353 ;
+redirection :  ;
+source :  ;
+
+2015-10-10 17:52:50 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-10-10 17:52:50 response :
+------------
+
+2015-10-10 17:53:44 trace :
+------------
+Array:
+from : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+to : gh_dcf2122dab58 ;
+time : 1444470825 ;
+type : text ;
+event :  ;
+tousername : gh_dcf2122dab58 ;
+fromusername : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+createtime : 1444470825 ;
+msgtype : text ;
+content : 你好 ;
+msgid : 6203954953611692940 ;
+redirection :  ;
+source :  ;
+
+2015-10-10 17:53:44 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 13 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-10-10 17:53:44 response :
+------------
+Array:
+FromUserName : gh_dcf2122dab58 ;
+ToUserName : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+MsgType : text ;
+Content : 您好，我是婕丽弗。请问有什么可以帮到您的吗？ ;
+
+2015-10-10 17:53:51 trace :
+------------
+Array:
+from : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+to : gh_dcf2122dab58 ;
+time : 1444470833 ;
+type : event ;
+event : VIEW ;
+tousername : gh_dcf2122dab58 ;
+fromusername : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+createtime : 1444470833 ;
+msgtype : event ;
+eventkey : http://mp.ijielifu.com/app/index.php?i=3&j=3&c=entry&do=jumpshop&m=eso_sale ;
+
+2015-10-10 17:53:51 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-10-10 17:53:51 response :
+------------
+
+2015-10-10 17:53:53 trace :
+------------
+Array:
+from : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+to : gh_dcf2122dab58 ;
+time : 1444470835 ;
+type : event ;
+event : VIEW ;
+tousername : gh_dcf2122dab58 ;
+fromusername : ovT0duPq8SJvwK4d506zKM6aeC4c ;
+createtime : 1444470835 ;
+msgtype : event ;
+eventkey : http://mp.ijielifu.com/app/index.php?i=3&j=3&c=entry&do=jumpshop&m=eso_sale ;
+
+2015-10-10 17:53:53 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2015-10-10 17:53:53 response :
+------------
+
+2015-10-10 20:45:06 trace :
+------------
+Array:
+from : oqCObuPvghKSWR7_X9xlH-5DWRxw ;
+to : gh_5013f37369ce ;
+time : 1444481107 ;
+type : text ;
+event :  ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuPvghKSWR7_X9xlH-5DWRxw ;
+createtime : 1444481107 ;
+msgtype : text ;
+content : /::) ;
+msgid : 6203999114463305936 ;
+redirection :  ;
+source :  ;
+
+2015-10-10 20:45:06 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-10-10 20:45:06 response :
+------------
+Array:
+FromUserName : gh_5013f37369ce ;
+ToUserName : oqCObuPvghKSWR7_X9xlH-5DWRxw ;
+MsgType : text ;
+Content : 您好，我是欧歌🚶，致力于细胞级护理品牌28days宣传推广，这里是欧歌开发专用号，如需关注🎯官方服务号，请搜索28days唯一官方微信号🌺“i28days”🌺关注。 ;
+

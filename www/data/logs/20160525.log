@@ -1,0 +1,99 @@
+2016-05-25 10:25:57 trace :
+------------
+Array:
+from : oqCObuHPRoyDMgO3pG-FnK-bxxCo ;
+to : gh_5013f37369ce ;
+time : 1464143239 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuHPRoyDMgO3pG-FnK-bxxCo ;
+createtime : 1464143239 ;
+msgtype : event ;
+eventkey :  ;
+
+2016-05-25 10:25:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-25 10:25:57 response :
+------------
+
+2016-05-25 13:23:12 trace :
+------------
+Array:
+from : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+to : gh_5013f37369ce ;
+time : 1464153875 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+createtime : 1464153875 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-05-25 13:23:12 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-25 13:23:12 response :
+------------
+
+2016-05-25 13:23:23 trace :
+------------
+Array:
+from : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+to : gh_5013f37369ce ;
+time : 1464153886 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+createtime : 1464153886 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-05-25 13:23:23 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-25 13:23:23 response :
+------------
+
+2016-05-25 13:28:26 trace :
+------------
+Array:
+from : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+to : gh_5013f37369ce ;
+time : 1464154189 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuJLwLtSnF_W3e_he4rU5okY ;
+createtime : 1464154189 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-05-25 13:28:26 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-05-25 13:28:26 response :
+------------
+

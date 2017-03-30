@@ -1,0 +1,35 @@
+2015-01-17 11:19:36 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1421464724 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1421464724 ;
+msgtype : text ;
+content : 大转盘 ;
+msgid : 6105144502200632474 ;
+redirection :  ;
+source :  ;
+
+2015-01-17 11:19:36 params :
+------------
+Array:
+message : Array ;
+module : ewei_bigwheel ;
+rule : 10 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-01-17 11:19:36 response :
+------------
+Array:
+FromUserName : gh_18223c0d3baa ;
+ToUserName : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

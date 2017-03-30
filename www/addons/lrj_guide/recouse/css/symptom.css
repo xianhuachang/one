@@ -1,0 +1,232 @@
+@charset "utf-8";
+body,
+ul,
+dl,
+dd,
+dt,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+form,
+select,
+fieldset,
+table,
+td,
+div,
+input {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 12px;
+	font-weight: normal
+}
+
+a img {
+	border: 0
+}
+
+body {
+	color: #333;
+	text-align: center;
+	font: 12px "微软雅黑";
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+	vertical-align: 0
+}
+
+a {
+	outline-style: none;
+	color: #535353;
+	text-decoration: none
+}
+
+a:hover {
+	color: #D40000;
+	text-decoration: none
+}
+
+.header {
+	display: none
+}
+
+
+/*用于获取更加体验*/
+
+.focus span {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background: #666;
+	font-size: 0
+}
+
+.focus span.current {
+	background: #fff
+}
+
+html,
+body {
+	height: 100%;
+}
+
+li[role='presentation'] {
+	border: 1px solid red;
+	border-radius: 5px;
+}
+
+.list-group-item>.badge {
+	float: left;
+}
+
+.showDetailDiv {
+	float: right;
+	height: 100%;
+	width: 7%;
+	text-align: center;
+}
+
+.detailDiv {
+	clear: both;
+	text-align: left;
+	font-size: 10px;
+	display: none;
+}
+
+.content {
+	width: 100%;
+	margin-top: 2px;
+	padding-bottom: 55px;
+	background: linear-gradient(to right, #b2b2b2 30%,#fe7f9d 31%,#fe7f9d 31%,#fe7f9d 31%,#fe7f9d 31%,#fe7f9d 31%);
+	min-height: 120%;
+}
+
+.left-nav {
+	width: 30%;
+	float: left;
+	background-color: #B2B2B2;
+	height: 100%;
+}
+
+.nav-item {
+	height: 45px;
+	border: 1px solid white;
+	border-top: 0px;
+	border-right: 2px solid white;
+	line-height: 40px;
+	color: white;
+	font-size: 1.5em;
+	font-family: "微软雅黑";
+}
+
+.active {
+	background-color: #FE7F9D;
+	border-right: 0px;
+}
+
+.right-title {
+	width: 70%;
+	float: right;
+	background-color: #FE7F9D;
+	height: 100%;
+	overflow-y: auto;
+	display: none;
+}
+
+.item-title {
+	float: left;
+	width: 100%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.glyphicon {
+	line-height: 3;
+	float: right;
+	margin-right: 4px;
+	color: white;
+	width: 26px;
+	top: 5px;
+}
+
+hr {
+	margin: 0;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.list-group-item {
+	background-color: #FFE5EC;
+	border-radius: 0;
+	border-color: #FE7F9D;
+}
+
+label {
+	display: block;
+    max-width: none;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 1.5em;
+    width: 90%;
+    float: right;
+}
+
+.detailToggle {
+	background-color: #FFE5EC;
+	color: #FE7F9D;
+}
+
+.sickImg {
+	width: 44px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-bottom: 7px;
+}
+
+.footer {
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=submit] {
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 25px;
+	line-height: 45px;
+	color: white;
+}
+.header{
+	width: 320px;
+	height: 160px;
+}
+.title-active{
+	display: block;
+}
+.fix{
+	clear: both;
+}

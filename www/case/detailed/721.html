@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\hxm.jpg"><img alt="黄小明" src="..\img\hxm.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为经常对着电脑，手机等，所以在下班的时候我经常会感觉眼睛很干涩，很不舒服。有时候连走路看东西都会有点影响。不知不觉中，在食用酵果菜谱后第34天，我发现我的眼睛不干涩了！现在下班的时候，没有了眼睛干涩的烦恼，连回家的脚步都轻快起来了。我想，应该是循环有改善的结果吧。
+<br />
+<br />
+
+<span style="float:right;">——黄小明 男 41 医生<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/hxm1.png"><img src="images/hxm1s.png" /></a>
+    <a id="example3" href="images/hxm2.png"><img src="images/hxm2s.png" /></a>
+    <a id="example4" href="images/hxm3.png"><img src="images/hxm3s.png" /></a>
+    <a id="example5" href="images/hxm4.png"><img src="images/hxm4s.png" /></a>
+    <a id="example6" href="images/hxm5.png"><img src="images/hxm5s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example5").imgbox();
+	$("#example6").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

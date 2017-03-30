@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\ljg.jpg"><img alt="梁静刚" src="..\img\ljg.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我以前偶尔两三天才会排一次便，没排便的时候我会感觉肚子有点胀，有点不舒服。多亏了有酵果菜谱。36天的时间，我的排便情况就有了很大的改善。除了工作忙，生活不规律了外，我几乎保持天天排便的状态，现在，我快忘了当初没排便时的不舒服感，只觉得一身轻松！
+<br />
+<br />
+
+<span style="float:right;">——梁静刚 男 37 司机<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/1.png"><img src="images/1s.png" /></a>
+    <a id="example3" href="images/2.png"><img src="images/2s.png" /></a>
+    <a id="example4" href="images/3.png"><img src="images/3s.png" /></a>
+    <a id="example5" href="images/4.png"><img src="images/4s.png" /></a>
+    <a id="example6" href="images/5.png"><img src="images/5s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example5").imgbox();
+	$("#example6").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

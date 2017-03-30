@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\hxm.jpg"><img alt="黄小明" src="..\img\hxm.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我以前一吃油腻、生冷的东西，肚子就会不舒服，马上就要腹泻！有时外出很尴尬，因为我得找厕所。有一次，我要上培训课，时间就要到了，可是肚子就不配合，闹腾得很，想上厕所却发现要排队，那种滋味很难受......
+我一直为这个问题烦恼，自从有了酵果菜谱，我的烦恼就烟消云散！从第一天开始，我就没有出现腹泻的情况，大便就一直成型，那种着急找厕所的现象就再也没有出现过！
+<br />
+<br />
+
+<span style="float:right;">——黄小明 男 41 医生<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/hxm1.png"><img src="images/hxm1s.png" /></a>
+    <a id="example3" href="images/hxm2.png"><img src="images/hxm2s.png" /></a>
+    <a id="example4" href="images/hxm3.png"><img src="images/hxm3s.png" /></a>
+    <a id="example5" href="images/hxm4.png"><img src="images/hxm4s.png" /></a>
+    <a id="example6" href="images/hxm5.png"><img src="images/hxm5s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example5").imgbox();
+	$("#example6").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

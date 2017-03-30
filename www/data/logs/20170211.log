@@ -1,0 +1,113 @@
+2017-02-11 14:15:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9whNTT8CX1Wk8qcfHs_8soog]]></FromUserName>
+<CreateTime>1486794051</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-02-11 14:15:37 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-11 14:15:37 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9whNTT8CX1Wk8qcfHs_8soog ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-02-11 14:15:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9whNTT8CX1Wk8qcfHs_8soog]]></FromUserName>
+<CreateTime>1486794063</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-11 14:15:49 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-02-11 14:15:49 response :
+------------
+
+2017-02-11 14:19:57 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9ws3I0NMNl-7XHKHQ-4q3ui8]]></FromUserName>
+<CreateTime>1486794311</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-02-11 14:19:57 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-11 14:19:57 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9ws3I0NMNl-7XHKHQ-4q3ui8 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-02-11 14:20:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9ws3I0NMNl-7XHKHQ-4q3ui8]]></FromUserName>
+<CreateTime>1486794320</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-11 14:20:05 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-02-11 14:20:05 response :
+------------
+
+2017-02-11 22:24:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiSHwZ2jBrAVPrDeBbX-RfY]]></FromUserName>
+<CreateTime>1486823396</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+

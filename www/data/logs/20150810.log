@@ -1,0 +1,93 @@
+2015-08-10 09:57:17 trace :
+------------
+Array:
+from : oqCObuAg0uuy_PpOBOYDAe6NrNus ;
+to : gh_5013f37369ce ;
+time : 1439171810 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuAg0uuy_PpOBOYDAe6NrNus ;
+createtime : 1439171810 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-08-10 09:57:17 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-08-10 09:57:17 response :
+------------
+Array:
+FromUserName : gh_5013f37369ce ;
+ToUserName : oqCObuAg0uuy_PpOBOYDAe6NrNus ;
+MsgType : text ;
+Content : 您好，我是欧歌🚶，致力于细胞级护理品牌28days宣传推广，这里是欧歌开发专用号，如需关注🎯官方服务号，请搜索28days唯一官方微信号🌺“i28days”🌺关注。 ;
+
+2015-08-10 18:44:22 trace :
+------------
+Array:
+from : oqCObuKmFmysMw4iIaMSa2hxwH4U ;
+to : gh_5013f37369ce ;
+time : 1439203433 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuKmFmysMw4iIaMSa2hxwH4U ;
+createtime : 1439203433 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-08-10 18:44:22 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-08-10 18:44:22 response :
+------------
+Array:
+FromUserName : gh_5013f37369ce ;
+ToUserName : oqCObuKmFmysMw4iIaMSa2hxwH4U ;
+MsgType : text ;
+Content : 您好，我是欧歌🚶，致力于细胞级护理品牌28days宣传推广，这里是欧歌开发专用号，如需关注🎯官方服务号，请搜索28days唯一官方微信号🌺“i28days”🌺关注。 ;
+
+2015-08-10 23:08:25 trace :
+------------
+Array:
+from : oqCObuLKFMbEIaP7BwJg_HvTdfN0 ;
+to : gh_5013f37369ce ;
+time : 1439219275 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuLKFMbEIaP7BwJg_HvTdfN0 ;
+createtime : 1439219275 ;
+msgtype : event ;
+eventkey :  ;
+
+2015-08-10 23:08:25 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2015-08-10 23:08:25 response :
+------------
+Array:
+FromUserName : gh_5013f37369ce ;
+ToUserName : oqCObuLKFMbEIaP7BwJg_HvTdfN0 ;
+MsgType : text ;
+Content : 您好，我是欧歌🚶，致力于细胞级护理品牌28days宣传推广，这里是欧歌开发专用号，如需关注🎯官方服务号，请搜索28days唯一官方微信号🌺“i28days”🌺关注。 ;
+

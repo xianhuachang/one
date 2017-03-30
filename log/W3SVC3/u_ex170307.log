@@ -1,0 +1,6 @@
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2017-03-06 16:13:58
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2017-03-06 16:13:58 183.60.158.93 GET /robots.txt - 80 - 220.181.108.160 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) 404 0 2 234
+2017-03-06 16:14:27 183.60.158.93 GET /question2/index.html winzoom=1 80 - 220.181.108.181 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) 304 0 0 46

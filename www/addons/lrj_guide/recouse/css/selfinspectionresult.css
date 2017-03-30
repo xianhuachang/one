@@ -1,0 +1,144 @@
+.header,
+.gender-div {
+	height: 35px;
+	text-align: center;
+}
+
+.header {
+	background-color: #FE7F9D;
+}
+
+h3 {
+	font-family: "微软雅黑";
+	color: white;
+	line-height: 36px;
+	font-size: 22px;
+	margin: 0;
+}
+
+.gender-div {
+	height: 45px;
+}
+
+.gender-div h3 {
+	color: black;
+}
+
+.content {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.selfinspection-description {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 400;
+	font-size: 12px;
+	background: #eceff1;
+	color: #666;
+	margin-bottom: 0;
+	padding: 9px;
+	margin-top: 0px;
+}
+
+ul {
+	width: 100%;
+}
+
+.part_name {
+	padding: 5px 20px;
+	background-color: #FE7F9D;
+	color: white;
+	font-size: 22px;
+	border-radius: 10px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+.top {
+	margin-top: 10px;
+	color: red;
+}
+.topP{text-align: left;text-indent: 2em;}
+.footer {
+	height: 50px;
+	background-color: #7F7F7F;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 22px;
+	color: white;
+	font-family: "微软雅黑";
+	line-height: 50px;
+	z-index: 999;
+}
+
+.product-img {
+	width: 100px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.p-title {
+	font-size: 2rem;
+}
+
+.product-item {
+	padding: 10px 0px 0px 10px;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+}
+
+.addtocart {
+	float: right;
+	position: absolute;
+	bottom: 20px;
+    right: 10px;
+    font-size: 17px;
+}
+
+.badge {
+	display: none;
+	background-color: green;
+}
+
+a {
+	color: white;
+}
+.clickviewdiv{
+	float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0.1em;
+    color: #FE7F9D;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.clickview{
+	background-color: #FE7F9D;
+    color: white;
+    text-align: center;
+    transform: rotate(30deg);
+    position: absolute;
+    z-index: -7;
+    width: 100px;
+    left: 18px;
+    top: 10px;
+    font-weight: bolder;
+}
+.red{
+	color: red;
+}
+.footer{width: 100%;}
+.footer ul{width:100%;padding: 0px;margin: 0px;display:flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-content: center;align-items: center;}
+.footer li{list-style: none; flex: 1;text-align: center; }

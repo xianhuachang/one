@@ -1,0 +1,751 @@
+2017-02-15 11:03:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wh6vHNzBtcODxBVyLMnuXAA]]></FromUserName>
+<CreateTime>1487128184</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-02-15 11:03:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wh6vHNzBtcODxBVyLMnuXAA]]></FromUserName>
+<CreateTime>1487128208</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-02-15 11:03:44 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:03:44 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wh6vHNzBtcODxBVyLMnuXAA ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-02-15 11:09:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487128524</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:09:01 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:09:01 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:14:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487128872</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:14:48 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:14:48 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:15:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487128912</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:15:29 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:15:29 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:16:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wh6vHNzBtcODxBVyLMnuXAA]]></FromUserName>
+<CreateTime>1487128945</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[请问一下]]></Content>
+<MsgId>6387170184241571836</MsgId>
+</xml>
+
+2017-02-15 11:16:01 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:16:01 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wh6vHNzBtcODxBVyLMnuXAA ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:21:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129258</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:21:14 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:21:14 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:21:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129293</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:21:49 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:21:49 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:22:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129306</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:22:02 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:22:02 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:22:39 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129342</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:22:39 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:22:39 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:29:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129737</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:29:13 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:29:13 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:29:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129744</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:29:20 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:29:20 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:29:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129761</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[https://qiyukf.com/client?k=949319e231213aff0052a508fb9b3443&u=lvpfkuhdy9fnguaso8me&gid=0&sid=0&qtype=0&dvctimer=0&robotShuntSwitch=0&t=weixin%253A%252F%252Fprivate%252Fsetresult%252FSCENE_FETCHQUEUE%2526eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:29:37 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:29:37 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 11:29:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wiVbAE8eTBHl_teVBY0UTOU]]></FromUserName>
+<CreateTime>1487129776</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide]]></EventKey>
+<MenuId>531367307</MenuId>
+</xml>
+
+2017-02-15 11:29:52 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 11:29:52 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wiVbAE8eTBHl_teVBY0UTOU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 12:26:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9whtRSbTfPG5uol1eA-qjklE]]></FromUserName>
+<CreateTime>1487133185</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide]]></EventKey>
+<MenuId>531589235</MenuId>
+</xml>
+
+2017-02-15 12:26:44 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 12:26:44 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9whtRSbTfPG5uol1eA-qjklE ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 12:26:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9whtRSbTfPG5uol1eA-qjklE]]></FromUserName>
+<CreateTime>1487133195</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>6387188437852580927</MsgId>
+</xml>
+
+2017-02-15 12:26:51 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 12:26:51 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9whtRSbTfPG5uol1eA-qjklE ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 15:23:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wkKBQehW95uXJpMpNu1EkCg]]></FromUserName>
+<CreateTime>1487143794</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>531589235</MenuId>
+</xml>
+
+2017-02-15 15:23:33 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 15:23:33 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wkKBQehW95uXJpMpNu1EkCg ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 15:24:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wkKBQehW95uXJpMpNu1EkCg]]></FromUserName>
+<CreateTime>1487143829</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>531589235</MenuId>
+</xml>
+
+2017-02-15 15:24:07 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 15:24:07 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wkKBQehW95uXJpMpNu1EkCg ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+
+2017-02-15 15:54:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wh6vHNzBtcODxBVyLMnuXAA]]></FromUserName>
+<CreateTime>1487145642</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[http://192.168.1.102/demo/index.html]]></Content>
+<MsgId>6387241897310518487</MsgId>
+</xml>
+
+2017-02-15 15:54:20 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-02-15 15:54:20 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wh6vHNzBtcODxBVyLMnuXAA ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+

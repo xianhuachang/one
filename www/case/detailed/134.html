@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\wj.jpg"><img alt="吴坚" src="..\img\wj.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生活中到处都是压力产生来源，有家庭、工作、各种琐事，每当压力来袭，自己都会感觉头痛。压力无法改变，那么就从自身改变起来吧。开始接触酵果菜谱以来，头痛现象从第一天开始就有所改善，跟以前对比头痛程度有所减轻，不再是头痛来袭，整个脑袋都是空空一片，无法集中精神。继续食用酵果菜谱3个月后，除了偶尔感冒、工作量增加和晚睡外，没有再出现头痛现象。
+<br />
+
+<span style="float:right;">——吴坚 女 40 经理<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/wj1.png"><img src="images/wj1s.png" /></a>
+    <a id="example3" href="images/wj2.png"><img src="images/wj2s.png" /></a>
+    <a id="example4" href="images/wj3.png"><img src="images/wj3s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+2017-03-18 09:23:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wkbZn-pODpDcFDgxVbTYKM0]]></FromUserName>
+<CreateTime>1489800624</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-03-18 10:49:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wsi43SusxOUDOLDxb3PkJLU]]></FromUserName>
+<CreateTime>1489805747</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>532312285</MenuId>
+</xml>
+
+2017-03-18 10:49:12 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 29 ;
+priority : 0 ;
+keyword : Array ;
+
+2017-03-18 10:49:12 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wsi43SusxOUDOLDxb3PkJLU ;
+MsgType : text ;
+Content : 您是想咨询以下问题吗，请点击进入：
+<a href="http://mp.angelbeautyinc.com/app/aboutus.html">1、了解公司的历史背景/专业度/企业文化</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide">2、了解自己的亚健康情况</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide">3、全面掌握自己的健康状况，选择最适合自己的酵果菜谱</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop">4、了解产品的成分、功能、适用症状、使用方法、注意事项，看看使用者的案例</a>👈
+
+<a href="http://mp.angelbeautyinc.com/question2/index.html">5、查询产品的材料、制作、食用问题、效果等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop">6、了解个人购买记录，产品物流状态等</a>👈
+
+<a href="http://mp.angelbeautyinc.com/test.html">7、其它问题（咨询客服）</a>👈 ;
+

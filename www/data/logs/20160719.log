@@ -1,0 +1,46 @@
+2016-07-19 09:51:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1468893103</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[购物]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-19 09:51:43 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 14 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-19 09:51:43 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-19 16:41:23 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1468917683</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[购物]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-19 16:41:23 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 14 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-19 16:41:23 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

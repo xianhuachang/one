@@ -1,0 +1,389 @@
+2014-11-25 10:02:33 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416880890 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416880890 ;
+msgtype : location ;
+location_x : 23.126026 ;
+location_y : 113.341835 ;
+scale : 16 ;
+label : 广州市天河区海安路363号 ;
+msgid : 6085457085079147740 ;
+
+2014-11-25 10:02:33 params :
+------------
+
+2014-11-25 10:02:33 response :
+------------
+
+2014-11-25 10:03:03 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416880920 ;
+type : event ;
+event : unsubscribe ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416880920 ;
+msgtype : event ;
+eventkey :  ;
+
+2014-11-25 10:03:03 params :
+------------
+
+2014-11-25 10:03:03 response :
+------------
+
+2014-11-25 10:03:23 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416880940 ;
+type : event ;
+event : subscribe ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416880940 ;
+msgtype : event ;
+eventkey :  ;
+
+2014-11-25 10:03:23 params :
+------------
+
+2014-11-25 10:03:23 response :
+------------
+
+2014-11-25 10:03:32 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416880949 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416880949 ;
+msgtype : location ;
+location_x : 23.126026 ;
+location_y : 113.341835 ;
+scale : 16 ;
+label : 广州市天河区海安路363号 ;
+msgid : 6085457338482218223 ;
+
+2014-11-25 10:03:32 params :
+------------
+
+2014-11-25 10:03:32 response :
+------------
+
+2014-11-25 10:04:08 trace :
+------------
+Array:
+from : od9iCuI4r2zpwISB7DobC47YPheM ;
+to : gh_18223c0d3baa ;
+time : 1416880984 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuI4r2zpwISB7DobC47YPheM ;
+createtime : 1416880984 ;
+msgtype : location ;
+location_x : 33.603561 ;
+location_y : 116.964355 ;
+scale : 16 ;
+label : 宿州市埇桥区外环南路 ;
+msgid : 6085457488806073595 ;
+
+2014-11-25 10:04:08 params :
+------------
+
+2014-11-25 10:04:08 response :
+------------
+
+2014-11-25 10:04:08 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416880985 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416880985 ;
+msgtype : text ;
+content : 1111 ;
+msgid : 6085457493101040892 ;
+redirection :  ;
+source :  ;
+
+2014-11-25 10:04:08 params :
+------------
+
+2014-11-25 10:04:08 response :
+------------
+
+2014-11-25 10:04:31 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416881007 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416881007 ;
+msgtype : text ;
+content : 3333 ;
+msgid : 6085457587590321408 ;
+redirection :  ;
+source :  ;
+
+2014-11-25 10:04:31 params :
+------------
+
+2014-11-25 10:04:31 response :
+------------
+
+2014-11-25 10:04:42 trace :
+------------
+Array:
+from : od9iCuI4r2zpwISB7DobC47YPheM ;
+to : gh_18223c0d3baa ;
+time : 1416881018 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuI4r2zpwISB7DobC47YPheM ;
+createtime : 1416881018 ;
+msgtype : text ;
+content : 测试 ;
+msgid : 6085457634834961667 ;
+redirection :  ;
+source :  ;
+
+2014-11-25 10:04:42 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 9 ;
+priority : 0 ;
+keyword : Array ;
+
+2014-11-25 10:04:42 response :
+------------
+Array:
+FromUserName : gh_18223c0d3baa ;
+ToUserName : od9iCuI4r2zpwISB7DobC47YPheM ;
+MsgType : text ;
+Content : 啦啦啦啦啦 ;
+
+2014-11-25 10:05:04 trace :
+------------
+Array:
+from : od9iCuI4r2zpwISB7DobC47YPheM ;
+to : gh_18223c0d3baa ;
+time : 1416881041 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuI4r2zpwISB7DobC47YPheM ;
+createtime : 1416881041 ;
+msgtype : location ;
+location_x : 33.603561 ;
+location_y : 116.964355 ;
+scale : 16 ;
+label : 宿州市埇桥区外环南路 ;
+msgid : 6085457733619209487 ;
+
+2014-11-25 10:05:04 params :
+------------
+
+2014-11-25 10:05:04 response :
+------------
+
+2014-11-25 10:05:16 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416881053 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416881053 ;
+msgtype : text ;
+content : 66666 ;
+msgid : 6085457785158817045 ;
+redirection :  ;
+source :  ;
+
+2014-11-25 10:05:16 params :
+------------
+
+2014-11-25 10:05:16 response :
+------------
+
+2014-11-25 10:05:29 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416881066 ;
+type : text ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416881066 ;
+msgtype : text ;
+content : 测试 ;
+msgid : 6085457840993391896 ;
+redirection :  ;
+source :  ;
+
+2014-11-25 10:05:29 params :
+------------
+Array:
+message : Array ;
+module : basic ;
+rule : 9 ;
+priority : 0 ;
+keyword : Array ;
+
+2014-11-25 10:05:29 response :
+------------
+Array:
+FromUserName : gh_18223c0d3baa ;
+ToUserName : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+MsgType : text ;
+Content : 啦啦啦啦啦 ;
+
+2014-11-25 10:08:24 trace :
+------------
+Array:
+from : od9iCuI4r2zpwISB7DobC47YPheM ;
+to : gh_18223c0d3baa ;
+time : 1416881241 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuI4r2zpwISB7DobC47YPheM ;
+createtime : 1416881241 ;
+msgtype : location ;
+location_x : 33.603615 ;
+location_y : 116.964607 ;
+scale : 16 ;
+label :  ;
+msgid : 6085458592612668746 ;
+
+2014-11-25 10:08:24 params :
+------------
+
+2014-11-25 10:08:24 response :
+------------
+
+2014-11-25 10:08:25 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416881242 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416881242 ;
+msgtype : location ;
+location_x : 23.126026 ;
+location_y : 113.341827 ;
+scale : 16 ;
+label : 广州市天河区海安路363号 ;
+msgid : 6085458596907636043 ;
+
+2014-11-25 10:08:25 params :
+------------
+
+2014-11-25 10:08:25 response :
+------------
+
+2014-11-25 10:10:35 trace :
+------------
+Array:
+from : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+to : gh_18223c0d3baa ;
+time : 1416881372 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+createtime : 1416881372 ;
+msgtype : location ;
+location_x : 23.125986 ;
+location_y : 113.341934 ;
+scale : 16 ;
+label : 广州市天河区海安路363号 ;
+msgid : 6085459155253384565 ;
+
+2014-11-25 10:10:35 params :
+------------
+Array:
+module : we7_business ;
+rule : -1 ;
+message : Array ;
+
+2014-11-25 10:10:35 response :
+------------
+Array:
+FromUserName : gh_18223c0d3baa ;
+ToUserName : od9iCuEkcpZ93q0Sk-MLwxJ8FVrc ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2014-11-25 10:12:26 trace :
+------------
+Array:
+from : od9iCuI4r2zpwISB7DobC47YPheM ;
+to : gh_18223c0d3baa ;
+time : 1416881483 ;
+type : location ;
+event :  ;
+tousername : gh_18223c0d3baa ;
+fromusername : od9iCuI4r2zpwISB7DobC47YPheM ;
+createtime : 1416881483 ;
+msgtype : location ;
+location_x : 33.603600 ;
+location_y : 116.964462 ;
+scale : 16 ;
+label : 宿州市埇桥区外环南路 ;
+msgid : 6085459631994754467 ;
+
+2014-11-25 10:12:26 params :
+------------
+Array:
+module : we7_business ;
+rule : -1 ;
+message : Array ;
+
+2014-11-25 10:12:26 response :
+------------
+Array:
+FromUserName : gh_18223c0d3baa ;
+ToUserName : od9iCuI4r2zpwISB7DobC47YPheM ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

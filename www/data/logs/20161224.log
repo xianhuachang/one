@@ -1,0 +1,168 @@
+2016-12-24 14:07:57 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482559977</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-12-24 14:07:57 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-12-24 14:07:57 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wprwp0EPKFjL5j_11Z8PT3I ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-12-24 14:08:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482559977</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-12-24 14:08:02 params :
+------------
+Array:
+message : Array ;
+module : news ;
+rule : 26 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-12-24 14:08:02 response :
+------------
+Array:
+FromUserName : gh_fbee6dda34f1 ;
+ToUserName : o1Sf9wprwp0EPKFjL5j_11Z8PT3I ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-12-24 14:08:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482559991</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>528219688</MenuId>
+</xml>
+
+2016-12-24 14:08:11 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-24 14:08:11 response :
+------------
+
+2016-12-24 14:08:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482560014</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>528219688</MenuId>
+</xml>
+
+2016-12-24 14:08:33 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-24 14:08:33 response :
+------------
+
+2016-12-24 14:21:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482560813</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>528219688</MenuId>
+</xml>
+
+2016-12-24 14:21:53 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-24 14:21:53 response :
+------------
+
+2016-12-24 14:22:01 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482560821</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>528219688</MenuId>
+</xml>
+
+2016-12-24 14:22:01 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-24 14:22:01 response :
+------------
+
+2016-12-24 14:26:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wprwp0EPKFjL5j_11Z8PT3I]]></FromUserName>
+<CreateTime>1482561090</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>528219688</MenuId>
+</xml>
+
+2016-12-24 14:26:30 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-12-24 14:26:30 response :
+------------
+

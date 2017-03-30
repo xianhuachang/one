@@ -1,0 +1,133 @@
+{template 'web/_header'}
+{template 'web/shop/tabs'}
+
+{if $operation == 'display'}
+<div class="main panel panel-default">
+    <div class="panel-body table-responsive">
+        <table class="table table-hover">
+            <thead class="navbar-inner">
+                <tr>
+                    <th style="width:30px;">ID</th>
+                    <th style="width:80px;">显示顺序</th>
+                    <th style="width:200px;">物流名称</th>
+                    <th style="width:300px;">区域说明</th>
+                    <th style="width:120px;">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {loop $list $item}
+                <tr>
+                    <td>{$item['id']}</td>
+                    <td>{$item['displayorder']}</td>
+                    <td>{$item['express_name']}</td>
+                    <td>{$item['express_area']}</td>
+                    <td style="text-align:left;">
+                        <a href="{php echo $this->createWebUrl('shop/express', array('op' => 'post', 'id' => $item['id']))}" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="修改"><i class="fa fa-pencil"></i></a>
+                        <a href="{php echo $this->createWebUrl('shop/express', array('op' => 'delete', 'id' => $item['id']))}" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="删除"><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                {/loop}
+                <tr>
+                    <td colspan='5'>
+                        <a class='btn btn-default' href="{php echo $this->createWebUrl('shop/express',array('op'=>'post'))}"><i class='fa fa-plus'></i> 添加物流</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        {$pager}
+    </div>
+</div>
+<script>
+    require(['bootstrap'], function($){
+    $('.btn').hover(function(){
+    $(this).tooltip('show');
+    }, function(){
+    $(this).tooltip('hide');
+    });
+    });</script>
+{elseif $operation == 'post'}
+
+<div class="main">
+    <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" onsubmit='return formcheck()'>
+        <input type="hidden" name="id" value="{$express['id']}" />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                物流详细设置
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">排序</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <input type="text" name="displayorder" class="form-control" value="{$express['displayorder']}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">常用快递公司</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <select id="common_corp" class="form-control input-medium">
+                            <option value="">其他快递</option>
+                            <option value="shunfeng">顺丰</option>
+                            <option value="shentong">申通</option>
+                            <option value="yunda">韵达快运</option>
+                            <option value="tiantian">天天快递</option>
+                            <option value="yuantong">圆通速递</option>
+                            <option value="zhongtong">中通速递</option>
+                            <option value="ems">ems快递</option>
+                            <option value="huitongkuaidi">汇通快运</option>
+                            <option value="quanfengkuaidi">全峰快递</option>
+                            <option value="zhaijisong">宅急送</option> 
+                        </select>
+                        <span class="help-block">如果您选择了常用快递，则客户可以订单中查询快递信息，如果缺少您想要的快递，您可以联系我们! </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label"><span style="color:red">*</span>物流公司</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <input type="text" id='express_name' name="express_name" class="form-control" value="{$express['express_name']}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">公司网站</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <input type="text" name="express_url" class="form-control" value="{$express['express_url']}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">配送区域</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <input type="text" name="express_area" class="form-control" value="{$express['express_area']}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-sm-12">
+            <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" onclick='return formcheck()' />
+            <input type="hidden" name="token" value="{$_W['token']}" />
+        </div>
+    </form>
+</div>
+<script language='javascript'>
+            function formcheck(){
+            if ($("#express_name").isEmpty()){
+            Tip.focus("express_name", "请填写物流公司名称!");
+                    return false;
+            }
+            return true;
+            }
+
+    $(function(){
+    $("#common_corp").change(function(){
+    var obj = $(this);
+            var sel = obj.find("option:selected");
+            $("#express_name").val(sel.attr("data-name"));
+            $("#express_url").val(sel.val());
+    });
+    {if !empty($express['id'])}
+    $("#common_corp").val("{$express['express_url']}");
+    {/if}
+
+    })
+</script>
+{/if}
+{template 'common/footer'}

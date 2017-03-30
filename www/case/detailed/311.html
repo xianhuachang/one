@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\wj.jpg"><img alt="吴坚" src="..\img\wj.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以前一遇到精神压力过大，工作繁忙，我偶尔会出现心律不整。虽然说目前的心律不整没有给我带来什么大的坏处，但始终不是一件好事。通过酵果菜谱的调理，3个月、6个月过去了，甚至9个月都过去了，我都没有再出现心律不整的现象了，这让我很惊喜！
+<br />
+<br />
+
+<span style="float:right;">——吴坚 女 40 经理<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/wj1.png"><img src="images/wj1s.png" /></a>
+    <a id="example3" href="images/wj2.png"><img src="images/wj2s.png" /></a>
+    <a id="example4" href="images/wj3.png"><img src="images/wj3s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

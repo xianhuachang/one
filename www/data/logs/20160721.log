@@ -1,0 +1,46 @@
+2016-07-21 09:41:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1469065267</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[自诊]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-21 09:41:07 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 15 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-21 09:41:07 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-21 15:42:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1469086947</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[自诊]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-21 15:42:27 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 15 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-21 15:42:27 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

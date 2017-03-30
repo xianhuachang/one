@@ -1,0 +1,24 @@
+2016-02-07 13:28:00 trace :
+------------
+Array:
+from : oqCObuFWu9nOF09IkaMG_M84hCSk ;
+to : gh_5013f37369ce ;
+time : 1454822882 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuFWu9nOF09IkaMG_M84hCSk ;
+createtime : 1454822882 ;
+msgtype : event ;
+eventkey :  ;
+
+2016-02-07 13:28:00 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-07 13:28:00 response :
+------------
+

@@ -1,0 +1,242 @@
+2017-01-30 16:18:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764703</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:18:11 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:18:11 response :
+------------
+
+2017-01-30 16:20:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764825</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#brand]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:20:13 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:20:13 response :
+------------
+
+2017-01-30 16:20:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764832</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:20:20 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:20:20 response :
+------------
+
+2017-01-30 16:20:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764855</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=member&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:20:43 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:20:43 response :
+------------
+
+2017-01-30 16:20:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764865</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=shop&m=ewei_shop]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:20:53 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:20:53 response :
+------------
+
+2017-01-30 16:21:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764924</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:21:52 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:21:52 response :
+------------
+
+2017-01-30 16:22:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764940</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=associate&m=lrj_guide]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:22:08 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:22:08 response :
+------------
+
+2017-01-30 16:22:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485764976</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:22:44 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:22:44 response :
+------------
+
+2017-01-30 16:23:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485765001</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/question2/index.html]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:23:09 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:23:09 response :
+------------
+
+2017-01-30 16:23:20 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485765012</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/index.php?i=8&c=entry&do=selfinspection&m=lrj_guide]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:23:20 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:23:20 response :
+------------
+
+2017-01-30 16:29:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_fbee6dda34f1]]></ToUserName>
+<FromUserName><![CDATA[o1Sf9wjLfY9pINdEYHQOSfXAdQBk]]></FromUserName>
+<CreateTime>1485765373</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://mp.angelbeautyinc.com/app/aboutus.html#enterprise]]></EventKey>
+<MenuId>530471859</MenuId>
+</xml>
+
+2017-01-30 16:29:21 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-01-30 16:29:21 response :
+------------
+

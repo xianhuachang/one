@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\tsz.jpg"><img alt="谭顺樟 " src="..\img\tsz.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以前因为没有质量好的睡眠，第二天起床总会觉得整个人处于一种疲惫的状态，整个人都没有精神。自从食用酵果菜谱后，初步在睡眠上得到了的调整。3天的时间，我晚上睡得好了，睡得香了；17天后我睡醒精神好，也不赖床了，让我有充足的精力迎接新的一天开始。
+<br />
+<br />
+
+<span style="float:right;">——谭顺樟 男 20 电脑编辑人员<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/tsz1.png"><img src="images/tsz1s.png" /></a>
+    <a id="example3" href="images/tsz2.png"><img src="images/tsz2s.png" /></a>
+    <a id="example4" href="images/tsz3.png"><img src="images/tsz3s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>

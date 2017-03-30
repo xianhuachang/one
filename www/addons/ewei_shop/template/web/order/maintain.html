@@ -1,0 +1,122 @@
+{template 'web/_header'} {template 'web/order/tabs'}
+<style type='text/css'>
+	.trhead td {
+		background: #efefef;
+		text-align: center
+	}	
+	.trbody td {
+		text-align: center;
+		vertical-align: top;
+		border-left: 1px solid #ccc;
+	}
+</style>
+
+<table class='table' style='float:left;border:1px solid #ccc;margin-bottom:5px;table-layout: fixed'>
+	<tr class='trhead'>
+		<td>产品名/编号</td>
+		<td>总数量</td>
+		<td>已发数量</td>
+		<td>剩余数量</td>
+		<td>操作</td>
+	</tr>
+</table>
+{loop $orders $item}
+<table class='table' style='float:left;border:1px solid #ccc;margin-top:5px;margin-bottom:5px;table-layout: fixed'>
+	<tr>
+		<td colspan='5' style='border-bottom:1px solid #ccc;background:#efefef;'>
+			<b>订单编号:</b> {$item['ordersn']}
+		</td>
+	</tr>
+	{php $goodsCount=count($item['goods']);}
+	{loop $item['goods'] $index &$g}
+	<tr class='trbody'>
+		<td valign='top'>{$g['title']} / {$g['goodssn']}</td>
+		<td style='border-left:none'>{$g['goods_total']}</td>
+		<td style='border-left:none'>{$g['sended']}</td>
+		<td style='border-left:none'><label style="color: red;">{$g['owe']}</label></td>
+		{if $index==0 && $goodsCount>1}	
+				<td  rowspan="{php echo $goodsCount;}" style='border-left:none'>
+					{if $g['owe']>0}
+					<a class="btn btn-primary btn-sm" href="javascript:;" onclick="$('#modal-confirmsend').find(':input[name=id]').val('{$item['id']}')" data-toggle="modal" data-target="#modal-confirmsend">确认发货</a>
+					{else}
+					<label class="label label-success">已完成</label>
+					{/if}
+				</td>
+		{elseif $index==0 && $goodsCount==1}
+				<td style='border-left:none'>
+					{if $g['owe']>0}
+					<a class="btn btn-primary btn-sm" href="javascript:;" onclick="$('#modal-confirmsend').find(':input[name=id]').val('{$item['id']}')" data-toggle="modal" data-target="#modal-confirmsend">确认发货</a>
+					{else}
+					<label class="label label-success">已完成</label>
+					{/if}
+				</td>
+		{/if}
+	</tr>
+	{/loop}
+</table>
+{/loop}
+   <!-- 确认发货 -->
+        <div id="modal-confirmsend" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" style="width:600px;margin:0px auto;">
+            <form class="form-horizontal form" action="{php echo $this->createWebUrl('order')}" method="post" enctype="multipart/form-data">
+                <input type='hidden' name='id' value='' />
+                <input type='hidden' name='op' value='deal' />
+                <input type='hidden' name='to' value='confirmmaintainsend' />
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                        <h3>快递信息</h3>
+                    </div>
+                    <div class="modal-body">              
+                        <div class="form-group">
+                            <label class="col-xs-10 col-sm-3 col-md-3 control-label">快递公司</label>
+                            <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
+                                <select class="form-control" name="express" id="express">
+                                    <option value="" data-name="">其他快递</option>
+                                    <option value="shunfeng" data-name="顺丰">顺丰</option>
+                                    <option value="shentong" data-name="申通">申通</option>
+                                    <option value="yunda" data-name="韵达快运">韵达快运</option>
+                                    <option value="tiantian" data-name="天天快递">天天快递</option>
+                                    <option value="yuantong" data-name="圆通速递">圆通速递</option>
+                                    <option value="zhongtong" data-name="中通速递">中通速递</option>
+                                    <option value="ems" data-name="ems快递">ems快递</option>
+                                    <option value="huitongkuaidi" data-name="汇通快运">汇通快运</option>
+                                    <option value="quanfengkuaidi" data-name="全峰快递">全峰快递</option>
+                                    <option value="zhaijisong" data-name="宅急送">宅急送</option>                
+                                </select>
+                                <input type='hidden' name='expresscom' id='expresscom' />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-10 col-sm-3 col-md-3 control-label">快递单号</label>
+                            <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
+                                <input type="text" name="expresssn" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-10 col-sm-3 col-md-3 control-label">发货备注<br/>(商品批号_数量;)</label>
+                            <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
+                            	 <textarea name="express_remark" rows="3" class="form-control">
+                            	 	
+                            	 </textarea>
+                            </div>
+                        </div>                 
+                        <div id="module-menus"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary span2" name="confirmsend" value="yes">确认发货</button>
+                        <a href="#" class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</a>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+		<script>
+			$(function(){
+				$("#express").change(function(){
+					var selected_option="option[value='"+$(this).val()+"']";
+					$("#expresscom").val(($(selected_option).data("name")));
+				});
+			})
+		</script>
+ {$pager} {template 'web/_footer'}

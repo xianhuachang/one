@@ -1,0 +1,224 @@
+2016-02-09 14:55:56 trace :
+------------
+Array:
+from : oqCObuMksejFhOlDEnT3DneCPbtw ;
+to : gh_5013f37369ce ;
+time : 1455000956 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuMksejFhOlDEnT3DneCPbtw ;
+createtime : 1455000956 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 14:55:57 trace :
+------------
+Array:
+from : oqCObuMksejFhOlDEnT3DneCPbtw ;
+to : gh_5013f37369ce ;
+time : 1455000956 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuMksejFhOlDEnT3DneCPbtw ;
+createtime : 1455000956 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 14:55:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 14:55:57 response :
+------------
+
+2016-02-09 14:55:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 14:55:57 response :
+------------
+
+2016-02-09 21:12:09 trace :
+------------
+Array:
+from : oqCObuMksejFhOlDEnT3DneCPbtw ;
+to : gh_5013f37369ce ;
+time : 1455023533 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuMksejFhOlDEnT3DneCPbtw ;
+createtime : 1455023533 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 21:12:09 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 21:12:09 response :
+------------
+
+2016-02-09 21:16:18 trace :
+------------
+Array:
+from : oqCObuKOTFfs8KqTYTcFN6-d1TQI ;
+to : gh_5013f37369ce ;
+time : 1455023783 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuKOTFfs8KqTYTcFN6-d1TQI ;
+createtime : 1455023783 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 21:16:18 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 21:16:18 response :
+------------
+
+2016-02-09 21:57:08 trace :
+------------
+Array:
+from : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+to : gh_5013f37369ce ;
+time : 1455026232 ;
+type : event ;
+event : subscribe ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+createtime : 1455026232 ;
+msgtype : event ;
+eventkey :  ;
+
+2016-02-09 21:57:08 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 21:57:08 response :
+------------
+
+2016-02-09 22:20:21 trace :
+------------
+Array:
+from : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+to : gh_5013f37369ce ;
+time : 1455027625 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+createtime : 1455027625 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 22:20:21 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 22:20:21 response :
+------------
+
+2016-02-09 22:20:32 trace :
+------------
+Array:
+from : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+to : gh_5013f37369ce ;
+time : 1455027636 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+createtime : 1455027636 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 22:20:32 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 22:20:32 response :
+------------
+
+2016-02-09 22:20:42 trace :
+------------
+Array:
+from : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+to : gh_5013f37369ce ;
+time : 1455027647 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+createtime : 1455027647 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 22:20:42 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 22:20:42 response :
+------------
+
+2016-02-09 22:20:58 trace :
+------------
+Array:
+from : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+to : gh_5013f37369ce ;
+time : 1455027663 ;
+type : event ;
+event : VIEW ;
+tousername : gh_5013f37369ce ;
+fromusername : oqCObuGtssHtsOkwK5eEJ8l699i8 ;
+createtime : 1455027663 ;
+msgtype : event ;
+eventkey : http://mp.weixin.qq.com/s?__biz=MzA5MzE5NzExNw==&mid=10001097&idx=1&sn=8338ffe385dcd8dd1f376fc1a2fd50ff&scene=18#rd ;
+menuid : 208007648 ;
+
+2016-02-09 22:20:58 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-02-09 22:20:59 response :
+------------
+

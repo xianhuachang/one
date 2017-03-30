@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>案例分享</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#eee;">
+<div id="content" class="title">
+<a id="example2" href="..\img\hxm.jpg"><img alt="黄小明" src="..\img\hxm.jpg" ></a>
+</div>
+
+<hr>
+<div style="line-height:240%;margin:80px;color:#333;font-family:Brush Script Std">
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;２年前我出现了头痛，位置就在后脑勺（小脑），一个月好几次，通常都是在中午、下午出现，出现的时候是感觉隐隐作痛，有时候还感到一跳一跳的，很多工作就没法正常运行。对于我这些脑力工作者来说很麻烦的。我想过吃止痛药，但又担心副作用。后来吃酵果菜谱，刚开始的时候，我还有点怀疑，有没有那么好啊？但事实消除了我的疑虑！<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从第一天开始，我就没有出现头痛，我继续观察，发现我睡眠的品质比以前好，头痛没有再出现，在３个月里，头痛再也没有“拜访”过我，现在我都想不起我上次头痛是什么时候了！
+<br />
+<br />
+
+<span style="float:right;">——黄小明 男 41 医生<span>
+</p>
+
+</div>
+<hr>
+<div id="content" class="thumbs">
+	<a id="example1" href="images/hxm1.png"><img src="images/hxm1s.png" /></a>
+    <a id="example3" href="images/hxm2.png"><img src="images/hxm2s.png" /></a>
+    <a id="example4" href="images/hxm3.png"><img src="images/hxm3s.png" /></a>
+    <a id="example5" href="images/hxm4.png"><img src="images/hxm4s.png" /></a>
+    <a id="example6" href="images/hxm5.png"><img src="images/hxm5s.png" /></a>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.imgbox.pack.js"></script>
+<script>
+$(function(){
+	$("#example1").imgbox();
+	$("#example3").imgbox();
+	$("#example4").imgbox();
+	$("#example5").imgbox();
+	$("#example6").imgbox();
+	$("#example2").imgbox({
+		'speedIn'		: 0,
+		'speedOut'		: 0,
+		'alignment'		: 'center',
+		'overlayShow'	: true,
+		'allowMultiple'	: false
+	});
+});
+</script>
+</body>
+</html>
