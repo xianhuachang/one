@@ -38,7 +38,7 @@
 </head>
 <body>  
  <div>
-  <div class="wellcome"><marquee scrollamount="5">为梦想打拼的路上，有曲折，有艰辛，只要有强健的体魄，我们无惧失败。。。八年铸一品，日复一日，坚持、奋斗、创造。。。每天酵果菜谱，与您携手共创每一刻的人生精彩。您的健康，有我在！</marquee></div>
+  <div class="wellcome" style="color:red;"><marquee scrollamount="5">请选择自己对应的症状进入选择， 如没有该现象无需进入做任何选择。</marquee></div>
   <div class="heading">
     <h3 class="panel-title">性别选择</h3>
   </div>

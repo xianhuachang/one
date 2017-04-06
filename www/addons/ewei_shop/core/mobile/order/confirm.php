@@ -40,7 +40,7 @@ if ($_W['isajax']) {
 
             
 			$goods = pdo_fetchall($sql, array(':uniacid' => $uniacid, ':openid' => $openid));
-			//var_dump($goods);die;
+			
 			if (empty($goods)) {
 				show_json(-1, array('url' => $this -> createMobileUrl('shop/cart')));
 			} 
@@ -85,9 +85,10 @@ if ($_W['isajax']) {
 		foreach ($goods as $g) {
 			if ($g['isverify'] == 2) {
 				$isverify = true;
-			}		
+			}	
+			    $total = $g['total'];	
 				$sendNum +=$g['sendNum'];						
-                $productNum +=$g['productNum'];			  
+                $productNum +=$g['productNum'] * $total;			  
 		} 
 	
 		$member = m('member') -> getMember($openid);
@@ -616,7 +617,8 @@ if ($_W['isajax']) {
 		} 
 		
           foreach ($allgoods as $goods) {
-				    $productNum += $goods['productNum'];
+			        $total = $goods['total'];
+				    $productNum += $goods['productNum'] * $total;
 		}
         //换成用份数计算总价
 		$gdsprice = 0;

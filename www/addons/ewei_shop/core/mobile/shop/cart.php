@@ -28,6 +28,7 @@ if ($_W['isajax']) {
 		} 
 		unset($r);
 		$list = set_medias($list, 'thumb');
+		
 		$totalprice = number_format($totalprice, 2);
 		show_json(1, array('total' => $total, 'list' => $list, 'totalprice' => $totalprice));
 	} else if ($operation == 'add' && $_W['ispost']) {
