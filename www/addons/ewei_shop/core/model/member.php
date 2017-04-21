@@ -36,9 +36,6 @@ class Ewei_DShop_Member {
 		} 
 		return $info;
 	} 
-
-
-
 	public function getMember($openid = '') {
 		global $_W;
 		$uid = intval($openid);

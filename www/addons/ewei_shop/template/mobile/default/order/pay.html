@@ -36,7 +36,6 @@
     </div>
     <div class="order_main" >  
         <div class="line"><div class="label">订单编号</div><div class="info"><div class="inner"><%order.ordersn%></div></div></div>
-		<div class="line"><div class="label">获赠积分</div><div class="info"><div class="inner">+<%order.productNum%>分</div></div></div>
         <div class="line"><div class="label">支付金额</div><div class="info"><div class="inner"><div style='color:#ff6600'>￥<span id="orderprice" price="<%order.price%>"><%order.price%></span>元</div></div></div></div>
     </div>
     <%if order.price>0%>    

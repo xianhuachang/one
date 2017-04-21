@@ -11,19 +11,8 @@ $goods = pdo_fetch("SELECT * FROM " . tablename('ewei_shop_goods') . " WHERE id 
 $shop = set_medias( m('common') -> getSysset('shop'), 'logo');
 $shop['url'] = $this -> createMobileUrl('shop');
 $opencommission = false;
-if($goods['id']>=1 && $goods['id']<=11){
-      $goods['Frontid'] = $goods['id']+1;
-}else{
-	  $goods['Frontid'] = 1;
-}
 
-if($goods['id']>=2 && $goods['id']<=12){
-      $goods['Backid'] = $goods['id']-1;
-}else{
-      $goods['Backid'] = 12;
-}
 
-//var_dump($Frontid);die;
 $uncomfortable_place = isset($_SESSION['uncomfortable_place']) ? $_SESSION['uncomfortable_place'] : '' ;
 $recommend_products = isset($_SESSION['recommend_products']) ? $_SESSION['recommend_products'] : '' ; 
 //var_dump($_SESSION['uncomfortable_place']);exit;

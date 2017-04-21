@@ -107,8 +107,7 @@
                     <label class="col-xs-12 col-sm-3 col-md-2 control-label">发货信息 :</label>
                     <div class="col-sm-9 col-xs-12">
                         <p class="form-control-static">快递公司: <?php  echo $item['expresscom'];?>  <br/>快递单号: <?php  echo $item['expresssn'];?> <br/>发货时间: <?php  echo date('Y-m-d H:i:s', $item['sendtime'])?></p>
-                    	<iframe src="<?php  echo $express_result;?>" width="100%" height="500px"></iframe>
-						
+                    	<?php  echo $express_detail;?>
                     </div>
                 </div>
                 <?php  } ?>

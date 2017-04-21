@@ -82,7 +82,21 @@
       <div style="height:80px;"></div>
 </script>
 <script id='tpl_express' type='text/html'>
-      <iframe src="<%list%>" width="100%" height="300px"></iframe>
+      <%if list.length<=0%>
+        <p>未查询到物流信息</p>
+        <%else%>
+        <div class="list-main">
+            <%each list as row index%>
+             <div class="list">
+                 <div class="info <%if index==0%>infoon<%/if%>" <%if index==0%>style='border:none'<%/if%>>
+                     <div class='step'><%row.step%></div>
+                     <div class='time'><%row.time%></div>
+                 </div>
+                 <div class="dot  <%if index==0%>doton<%/if%>"></div>
+             </div>
+            <%/each%>
+       </div>
+        <%/if%>
 </script>
  
 <script type="text/javascript">

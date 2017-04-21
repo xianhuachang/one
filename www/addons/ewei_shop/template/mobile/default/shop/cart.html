@@ -134,8 +134,7 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                      <div class="other">
                            <div class="price"><%value.marketprice%></div>  
                            <div class="price1"><span class='line'><%value.productprice%></span></div>  
-                           <!--<div class="num" style="display:none"><div class="leftnav">-</div><input type="text" class="shownum" value="<%value.total%>" /><div class="rightnav">+</div>-->
-						   <div class="num"><div class="leftnav">-</div><input type="text" class="shownum" value="<%value.total%>" /><div class="rightnav">+</div>
+                           <div class="num" style="display:none"><div class="leftnav">-</div><input type="text" class="shownum" value="<%value.total%>" /><div class="rightnav">+</div>
                     </div>
                 </div>
             </div>
@@ -198,7 +197,7 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                 }
                  $this.find('.shownum').val(num);
                  total+=parseInt(num);
-                 totalprice+= parseFloat( $this.find('.shownum').val() ) * parseFloat($this.data('marketprice'));
+                totalprice+= parseFloat( $this.find('.shownum').val() ) * parseFloat($this.data('marketprice'));
             }
      
         });
@@ -341,7 +340,7 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                 calcprice();
             });
       
-            $('.optionsels').click(function(){
+            $('.optionsel').click(function(){
                 var id = $(this).closest('.cart_good').data('cartid');
                 var goodsid = $(this).closest('.cart_good').data('goodsid');                
                  core.json('shop/cart',{'op':'selectoption',id:id,goodsid:goodsid},function(json){
@@ -467,22 +466,20 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                             var optionid = $('#optionid').val();
 
 
-                            <!--core.json('shop/cart',{'op':'setoption',id:id,goodsid:goodsid,optionid:optionid},function(json){-->
-                                  <!--if(json.status==1){-->
-                                      <!-- closechoose();-->
-                                       
-                                       <!--$('.cart_good[data-cartid=' + id + ']').find('.cinner').html(json.result.optiontitle);-->
-									   
-                                       <!--$('.price').html(json.result.marketprice);-->
-                                      <!-- $('.price1').find('span').html(json.result.productprice);-->
-                                      <!-- $('.totalprice').html(json.result.marketprice);-->
-									    
-                                 <!--}-->
-                                <!-- else{-->
-                                    <!-- core.tip.show('设置失败');-->
-                                <!-- }-->
+                            core.json('shop/cart',{'op':'setoption',id:id,goodsid:goodsid,optionid:optionid},function(json){
+                                  if(json.status==1){
+                                       closechoose();
+                                        
+                                       $('.cart_good[data-cartid=' + id + ']').find('.cinner').html(json.result.optiontitle);
+                                       $('.price').html(json.result.marketprice);
+                                       $('.price1').find('span').html(json.result.productprice);
+                                       $('.totalprice').html(json.result.marketprice);
+                                 }
+                                 else{
+                                     core.tip.show('设置失败');
+                                 }
 
-                           <!-- },true,true);-->
+                            },true,true);
 
                         });
                     

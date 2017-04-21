@@ -49,16 +49,16 @@
     </div> 
     <div class="top">
         <div class="top_1">
-            <div class="text">累计积分：<%member.commission_total%> 分<br>可兑换积分（分）</div>
+            <div class="text">累计佣金：<%member.commission_total%> 元<br>可提现佣金（元）</div>
             <a href="<?php  echo $this->createPluginMobileUrl('commission/withdraw')?>"><div class="ico"></div></a>
         </div>
-        <div class="top_2"><%member.commission_ok%><a <%if commission_ok<=0 || commission_ok< set.withdraw%>href="javascript:;"<%else%>href="<?php  echo $this->createPluginMobileUrl('commission/apply')?>"<%/if%> id='withdraw' ><span <%if commission_ok<=0 || commission_ok< set.withdraw%>class='disabled'<%/if%> >兑换</span></a></div>
+        <div class="top_2"><%member.commission_ok%><a <%if commission_ok<=0 || commission_ok< set.withdraw%>href="javascript:;"<%else%>href="<?php  echo $this->createPluginMobileUrl('commission/apply')?>"<%/if%> id='withdraw' ><span <%if commission_ok<=0 || commission_ok< set.withdraw%>class='disabled'<%/if%> >提现</span></a></div>
     </div> 
     <div class="menu">  
-        <a href="<?php  echo $this->createPluginMobileUrl('commission/withdraw')?>"><div class="nav nav1"><i class="fa fa-cny fa-3x"></i><div class="title">推广积分</div><div class="con"><span><%member.commission_total%></span>分</div></div></a>
+        <a href="<?php  echo $this->createPluginMobileUrl('commission/withdraw')?>"><div class="nav nav1"><i class="fa fa-cny fa-3x"></i><div class="title">推广佣金</div><div class="con"><span><%member.commission_total%></span>元</div></div></a>
         <a href="<?php  echo $this->createPluginMobileUrl('commission/team')?>"><div class="nav nav2"><i class="fa fa-user  fa-3x"></i><div class="title">我的团队</div><div class="con"><span><%member.agentcount%></span>个成员</div></div></a>
-        <a href="<?php  echo $this->createPluginMobileUrl('commission/orders')?>"><div class="nav nav3"><i class="fa fa-list fa-3x"></i><div class="title">推广订单</div><div class="con"><span><%member.ordercount0%></span>个订单</div></div></a>
-        <a href="<?php  echo $this->createPluginMobileUrl('commission/log')?>"><div class="nav nav4"><i class="fa fa-random  fa-3x"></i><div class="title">积分明细</div><div class="con">积分兑现明细</div></div></a>
+        <a href="<?php  echo $this->createPluginMobileUrl('commission/order')?>"><div class="nav nav3"><i class="fa fa-list fa-3x"></i><div class="title">推广订单</div><div class="con"><span><%member.ordercount0%></span>个订单</div></div></a>
+        <a href="<?php  echo $this->createPluginMobileUrl('commission/log')?>"><div class="nav nav4"><i class="fa fa-random  fa-3x"></i><div class="title">佣金明细</div><div class="con">佣金提现明细</div></div></a>
         <a href="<?php  echo $this->createPluginMobileUrl('commission/shares')?>"><div class="nav nav5"><i class="fa fa-qrcode  fa-3x"></i><div class="title">二维码</div><div class="con">推广二维码</div></div></a>
 
     
@@ -79,9 +79,9 @@
             $('#withdraw').click(function(){
                 if(!json.result.cansettle){
                      if(json.result.settlemoney>0){
-                     core.tip.show('需到'+json.result.settlemoney+'分才能申请提现!');    
+                     core.tip.show('需到'+json.result.settlemoney+'元才能申请提现!');    
                      }else{
-                        core.tip.show('无可换积分!');        
+                        core.tip.show('无可提佣金!');        
                      }
                 }
             });

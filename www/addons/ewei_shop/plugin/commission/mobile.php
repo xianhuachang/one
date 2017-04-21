@@ -32,7 +32,7 @@ class CommissionMobile extends Plugin {
 	public function team() {
 		$this -> _exec_plugin(__FUNCTION__, false);
 	} 
-	public function orders() {
+	public function order() {
 		$this -> _exec_plugin(__FUNCTION__, false);
 	} 
 	public function withdraw() {

@@ -11,14 +11,10 @@ function sortByTime($a, $b) {
 	} 
 } 
 function getList($express, $expresssn) {
-	$url="https://m.kuaidi100.com/result.jsp?com={$express}&nu={$expresssn}";
-	return $url;
-	//$url = "http://wap.kuaidi100.com/wap_result.jsp?rand=" . time() . "&id={$express}&fromWeb=null&postid={$expresssn}";
-	//$url="https://m.kuaidi100.com/index_all.html?type={$express}&postid={$expresssn}#result";
+	$url = "http://wap.kuaidi100.com/wap_result.jsp?rand=" . time() . "&id={$express}&fromWeb=null&postid={$expresssn}";
 	load() -> func('communication');
 	$resp = ihttp_request($url);
 	$content = $resp['content'];
-	//return $content;die;
 	if (empty($content)) {
 		return array();
 	} 
@@ -65,7 +61,7 @@ if ($_W['isajax']) {
 			$step = explode("<br />", str_replace("&middot;", "", $row));
 			$list[] = array('time' => trim($step[0]), 'step' => trim($step[1]), 'ts' => strtotime(trim($step[0])));
 		} 
-		show_json(1, array('list' => $arr));
+		show_json(1, array('list' => $list));
 	} 
 } 
 include $this -> template('order/express');

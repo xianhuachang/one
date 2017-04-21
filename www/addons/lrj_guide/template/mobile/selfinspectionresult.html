@@ -34,7 +34,6 @@
 			 {/loop}
 			 <hr />
 			 <div class="product-recommend">
-			 <a href="http://mp.weixin.qq.com/s/h59xr4ELWYS1IG3ZhE8GRQ"><div class="clickviewss">推荐产品说明</div></a>
 			 	<h3 style="color: black;">为您推荐:</h3>
 			 	<h4 style="text-indent: 2em;">您可选择由上而下做顺应调理</h4>
 			 	{loop $products $item}
@@ -46,12 +45,8 @@
 			 			<!--<img class="product-img" src="{$_W['attachurl']}{$item['thumb']}" />-->
 			 		</a>		 		
 			 		<p class="p-title">{$item['title']}</p>
-			 		<!--<p>￥{$item['marketprice']}</p>
-			 		<div data-itemid="{$item['id']}" class="addtocart">加入购物车<span class="glyphicon glyphicon-shopping-cart red" aria-hidden="true"></span></div>-->
-                    <a href="{php echo url('entry//shop',array('p'=>'detail','id'=>$item['id'],'my'=>'','m'=>'ewei_shop'));}">
-
-					<div class="clickviews">选择购买</div>
-                    </a>
+			 		<p>￥{$item['marketprice']}</p>
+			 		<div data-itemid="{$item['id']}" class="addtocart">加入购物车<span class="glyphicon glyphicon-shopping-cart red" aria-hidden="true"></span></div>
 			 		<div class="clearfix"></div>
 			 	</section>
 			 	{/loop}
@@ -61,7 +56,7 @@
 			<ul>
 				<!--<a href="http://chat.v5kf.com/desk/kehu.html?site=131938&human=0&group_id=100397"></a>-->
 				<li style="background-color: #F5721A;"><span>咨询</span></li>
-				<!--<li style="background-color: #FECE00;"><a href="{php echo url('entry//shop',array('p'=>'cart','m'=>'ewei_shop'));}"><span>购买<span class="badge">0</span></span></a></li>-->
+				<li style="background-color: #FECE00;"><a href="{php echo url('entry//shop',array('p'=>'cart','m'=>'ewei_shop'));}"><span>购买<span class="badge">0</span></span></a></li>
 			</ul>			
 		</div>
 		
@@ -76,7 +71,7 @@
 		</div>		
 	</body>
 	<style>
-		/*#YSF-BTN-HOLDER{
+		#YSF-BTN-HOLDER{
 			    position: absolute;
     height: 50px;
     width: 180px;
@@ -84,14 +79,7 @@
     opacity: 0;
 		}
 		#YSF-CUSTOM-ENTRY-1{bottom: 0px;width: 180px;}
-		#YSF-CUSTOM-ENTRY-1 img{height: 50px;width: 180px;}*/
-
-
-        #YSF-BTN-HOLDER{position: fixed;height: 45px;width: 300px;left: 10%;opacity: 0;}
-		#YSF-CUSTOM-ENTRY-1{bottom: 0px;width: 300px;}
-		#YSF-CUSTOM-ENTRY-1 img{height: 45px;width: 100%;}
-
-
+		#YSF-CUSTOM-ENTRY-1 img{height: 50px;width: 180px;}
 	</style>
 	<script>
 		$(function(){

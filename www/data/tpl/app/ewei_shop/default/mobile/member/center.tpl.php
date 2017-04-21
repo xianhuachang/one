@@ -58,8 +58,7 @@
 </div>
  <div class="cart" style='margin-top:-20px;'>
      <a href="javascript:;"><div class="list1" style=" border-bottom:0px;border-top:0px;">余额: <span style='color:#f90'><%member.credit2%></span> <div class="take" onclick="location.href='<?php  echo $this->createMobileUrl('member/recharge',array('openid'=>$openid))?>'">充值</div></div></a>
-      <a href="javascript:;"><div class="list1" style="margin:0px; border-bottom:0px;">积分: <%member.credit1%></div></a>
-      <!--<a href="javascript:;"><div class="list1" style="margin:0px; border-bottom:0px;">ID: <?php  echo print_r($openid);?></div></a>-->
+    <a href="javascript:;"><div class="list1" style="margin:0px; border-bottom:0px;">积分: <%member.credit1%></div></a>
 </div>
 <div class="order">
     <a href="<?php  echo $this->createMobileUrl('order')?>">

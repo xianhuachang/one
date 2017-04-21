@@ -46,7 +46,7 @@ a{ text-decoration: none;}
                    <%if status==0%>
 	<div class="text">欢迎加入<span><%shop_set.name%></span>，请填写申请信息</div>
 	<div class="text">邀请人：<span><%if agent%><%agent.nickname%><%else%>总店<%/if%></span> (请核对)</div>
-	<div class="input"><input type="text" id='realname' placeholder="请填写真实姓名，用于积分结算" value="<?php  echo $member['realname'];?>" /></div>
+	<div class="input"><input type="text" id='realname' placeholder="请填写真实姓名，用于佣金结算" value="<?php  echo $member['realname'];?>" /></div>
 	<div class="input"><input type="text" id='mobile' placeholder="请填写手机号码方便联系"  value="<?php  echo $member['mobile'];?>"/></div>
 	<div class="input"><input type="text" id='weixin' placeholder="请填写微信号"  value="<?php  echo $member['weixin'];?>"/></div>
 	<div class="sub" id="submit">申请成为管家</div>
@@ -67,9 +67,9 @@ a{ text-decoration: none;}
 		<div class="vip_main">
             <div class="vip">
             	<div class="ico2"><i class="fa fa-cny"></i></div>
-                <div class="text"><div class="t1">销售拿积分</div><div class="t2">微店卖出商品，您可以获得积分；</div></div>
+                <div class="text"><div class="t1">销售拿佣金</div><div class="t2">微店卖出商品，您可以获得佣金；</div></div>
             </div>
-            <div class="vip" style="border-bottom:0px;">管家的商品销售统一由厂家直接收款、直接发货，并提供产品的售后服务，推广积分由厂家统一设置。</div>
+            <div class="vip" style="border-bottom:0px;">管家的商品销售统一由厂家直接收款、直接发货，并提供产品的售后服务，推广佣金由厂家统一设置。</div>
         </div>
         <div class="title">管家职责</div>
         <div class="vip_obligation">
@@ -84,18 +84,18 @@ a{ text-decoration: none;}
 			<ol>
 				<li>找寻准会员需求，邀请其成为酵果菜谱会员；</li>
 				<li>追踪会员食用情况及健康的改善情况；</li>
-				<li>根据会员食用一周、1个月、3个月的时间段，提前引导其延续食用；</li>
-				<li>培养会员养成健康管理能力；</li>
-				<li>会员有疑问（如政策性、条文性、技术性问题），进行相应的释疑与引导。</li>
-                <li style="list-style:none">技术性疑难问题可请美丽天使专家团队给予支持；</li>
-                <li style="list-style:none">疑问最终解释权归属美丽天使公司。</li>
+				<li class='red'>根据会员食用一周、1个月、3个月的时间段，提前引导其延续食用；</li>
+				<li class='red'>培养会员养成健康管理能力；</li>
+				<li>会员有疑问（<span class='red'>如政策性、条文性、技术性问题</span>），进行相应的释疑与引导。</li>
+                <li style="list-style:none" class='red'>技术性疑难问题可请美丽天使专家团队给予支持；</li>
+                <li style="list-style:none" class='red'>疑问最终解释权归属美丽天使公司。</li>
                 </ol>
 			<li>三、终身学习，积极培训</li>
 			<ol>
-				<li>不断提升自我对于健康专业知识的要求；</li>
+				<li class='red'>不断提升自我对于健康专业知识的要求；</li>
 				<li>以帮助他人获得健康为出发点，孜孜不倦地健康智慧、健康案例等与准会员、会员分享；</li>
-				<li>阅读公众号的文章，并安排会员、准会员阅读，关注其阅读心得；</li>
-				<li>定期组织会员进行小型学习交流会议；</li>
+				<li>阅读公众号的文章，并<span class='red'>安排</span>会员、准会员阅读，关注其阅读心得；</li>
+				<li><span class='red'>定期</span>组织会员进行小型学习交流会议；</li>
 				<li>参与美丽天使公司的培训，积极将市场问题反馈。</li>
 			</ol>
 			<li>四、引导会员成为健康管家</li>

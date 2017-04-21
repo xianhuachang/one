@@ -24,20 +24,20 @@
  
 <script id='tpl_main' type='text/html'>
     <div class="gold_top">
-        <div class="title">可兑换积分（分）</div>
+        <div class="title">可提现佣金（元）</div>
         <div class="num"><%member.commission_ok%><a href="<?php  echo $this->createPluginMobileUrl('commission/log')?>" >查看明细</a></div>
-        <div class="num2">成功兑换：<%member.commission_pay%></div>
+        <div class="num2">成功提现：<%member.commission_pay%></div>
     </div>
     <div class="gold_num" style="border:0px;height:70px">
-        <div class="nav"><div class="title">累计积分</div><div class="num"><%member.commission_total%></div><div class='tip'>所有积分</div></div>
-        <div class="nav" style="border:0px; width:44%;"><div class="title">已申请积分</div><div class="num"><%member.commission_apply%></div><div class='tip'>待审核的积分</div></div>
+        <div class="nav"><div class="title">累计佣金</div><div class="num"><%member.commission_total%></div><div class='tip'>所有佣金</div></div>
+        <div class="nav" style="border:0px; width:44%;"><div class="title">已申请佣金</div><div class="num"><%member.commission_apply%></div><div class='tip'>待审核的佣金</div></div>
     </div>
     <div class="gold_num" style="border:0px;height:70px">
-        <div class="nav"><div class="title">待兑换积分</div><div class="num"><%member.commission_check%></div><div class='tip'>审核通过的积分</div></div>
-        <%if set.settledays>0%><div class="nav" style="border:0px; width:44%;"><div class="title">未结算积分</div><div class="num"><%member.commission_lock%></div><div class='tip'>结算期内的积分</div></div><%/if%>
+        <div class="nav"><div class="title">待打款佣金</div><div class="num"><%member.commission_check%></div><div class='tip'>审核通过的佣金</div></div>
+        <%if set.settledays>0%><div class="nav" style="border:0px; width:44%;"><div class="title">未结算佣金</div><div class="num"><%member.commission_lock%></div><div class='tip'>结算期内的佣金</div></div><%/if%>
     </div>
-    <div class="gold_num">买家确认收货后，立即获得推广积分。<%if set.settledays>0%>结算期（<%set.settledays%>天）后，积分可兑换。结算期内，买家退货，积分将自动扣除。<%/if%>
-        <%if set.withdraw>0%><br/><br/>注意： 可用积分满 <span style='color:red'><%set.withdraw%></span> 分后才能申请兑换<br/><%/if%>
+    <div class="gold_num">买家确认收货后，立即获得推广佣金。<%if set.settledays>0%>结算期（<%set.settledays%>天）后，佣金可提现。结算期内，买家退货，佣金将自动扣除。<%/if%>
+        <%if set.withdraw>0%><br/><br/>注意： 可用现金满 <span style='color:red'><%set.withdraw%></span> 元后才能申请提现<br/><%/if%>
     </div>
     <div class="gold_sub" <%if !cansettle %>style='background:#ccc'<%/if%>>我要提现</div>
         

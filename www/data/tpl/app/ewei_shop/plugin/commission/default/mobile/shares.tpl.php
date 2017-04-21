@@ -31,7 +31,7 @@ body {margin:0px; background:#f4f4f4;}
       <div class="top">
     	<div class="ico"><i class="fa fa-cny"></i></div>
         <div class="info1">
-            <div class="t1">推广积分<span><?php  echo $commission;?></span>分</div>
+            <div class="t1">推广佣金<span><?php  echo $commission;?></span>元</div>
             <div class="t2">已销售 <span><?php  echo $goods['sales'];?></span> 件</div>
         </div>
     </div>

@@ -42,7 +42,7 @@
 <script id='tpl_team' type='text/html'>
     <div class="team_list_head">
         <div class="info">成员信息</div>
-        <div class="num">TA的积分</div>
+        <div class="num">TA的佣金</div>
     </div>
     <%each list as user%>
     <div class="team_list">

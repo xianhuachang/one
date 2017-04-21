@@ -5,7 +5,7 @@ $config = array();
 
 $config['db']['host'] = '127.0.0.1';
 $config['db']['username'] = 'mlts'; //TODO 生产环境为mlts
-$config['db']['password'] = 'Nd9k:-BS=DzK';
+$config['db']['password'] = 'ky9TJNRyxVrv';
 $config['db']['port'] = '3306';
 $config['db']['database'] = 'mlts';
 $config['db']['charset'] = 'utf8';

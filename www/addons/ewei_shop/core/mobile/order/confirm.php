@@ -8,7 +8,6 @@ $openid = m('user') -> getOpenid();
 $uniacid = $_W['uniacid'];
 $fromcart = 0;
 $trade = m('common') -> getSysset('trade');
-
 if (!empty($trade['shareaddress'])) {
 	if (!$_W['isajax']) {
 		$shareAddress = m('common') -> shareAddress();
@@ -17,30 +16,23 @@ if (!empty($trade['shareaddress'])) {
 		} 
 	} 
 } 
-	
 if ($_W['isajax']) {
-
 	if ($operation == 'display') {
 		$id = intval($_GPC['id']);
-		$optionid = intval($_GPC['optionid']);		
-		$total = intval($_GPC['total']);				
+		$optionid = intval($_GPC['optionid']);
+		$total = intval($_GPC['total']);
 		$ids = '';
 		empty($total) && $total = 1;
 		$isverify = false;
-		$goods = array();		
+		$goods = array();
 		if (empty($id)) {
 			$condition = '';
 			$cartids = $_GPC['cartids'];
-			if (!empty($operation)) {
+			if (!empty($cartids)) {
 				$condition = ' and c.id in (' . $cartids . ')';
 			} 
-			//$sql = 'SELECT c.goodsid,c.total,g.maxbuy,g.issendfree,g.isnodiscount,g.weight,o.productsn as sendNum, g.title,g.thumb,ifnull(o.marketprice, g.marketprice) as marketprice,o.title as optiontitle,c.optionid,g.storeids,g.isverify,g.deduct FROM ' . tablename('ewei_shop_member_cart') . ' c ' . ' left join ' . tablename('ewei_shop_goods') . ' g on c.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on c.optionid = o.id ' . " where c.openid=:openid and  c.deleted=0 and c.uniacid=:uniacid {$condition} order by c.id desc";
-
-            $sql = 'SELECT c.goodsid,c.total,g.maxbuy,g.issendfree,g.isnodiscount,o.weight,o.productnum as productNum,o.productsn as sendNum, g.title,g.thumb,ifnull(o.marketprice, g.marketprice) as marketprice,o.title as optiontitle,c.optionid,g.storeids,g.isverify,g.deduct FROM ' . tablename('ewei_shop_member_cart') . ' c ' . ' left join ' . tablename('ewei_shop_goods') . ' g on c.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on c.optionid = o.id ' . " where c.openid=:openid and  c.deleted=0 and c.uniacid=:uniacid {$condition} order by c.id desc";
-
-            
+			$sql = 'SELECT c.goodsid,c.total,g.maxbuy,g.issendfree,g.isnodiscount,g.weight,o.productsn as sendNum, g.title,g.thumb,ifnull(o.marketprice, g.marketprice) as marketprice,o.title as optiontitle,c.optionid,g.storeids,g.isverify,g.deduct FROM ' . tablename('ewei_shop_member_cart') . ' c ' . ' left join ' . tablename('ewei_shop_goods') . ' g on c.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on c.optionid = o.id ' . " where c.openid=:openid and  c.deleted=0 and c.uniacid=:uniacid {$condition} order by c.id desc";
 			$goods = pdo_fetchall($sql, array(':uniacid' => $uniacid, ':openid' => $openid));
-			
 			if (empty($goods)) {
 				show_json(-1, array('url' => $this -> createMobileUrl('shop/cart')));
 			} 
@@ -48,51 +40,29 @@ if ($_W['isajax']) {
 		} else {
 			$sql = 'SELECT id as goodsid,title,weight,issendfree,isnodiscount, thumb,marketprice,storeids,isverify,deduct FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
 			$data = pdo_fetch($sql, array(':uniacid' => $uniacid, ':id' => $id));
-			
 			$data['total'] = $total;
-			
 			if (!empty($optionid)) {
-				$option = pdo_fetch('select id,title,marketprice,weight,goodssn,productnum,productsn from ' . tablename('ewei_shop_goods_option') . ' where id=:id and goodsid=:goodsid and uniacid=:uniacid  limit 1', array(':uniacid' => $uniacid, ':goodsid' => $id, ':id' => $optionid));
-				
+				$option = pdo_fetch('select id,title,marketprice,goodssn,productsn from ' . tablename('ewei_shop_goods_option') . ' where id=:id and goodsid=:goodsid and uniacid=:uniacid  limit 1', array(':uniacid' => $uniacid, ':goodsid' => $id, ':id' => $optionid));
 				if (!empty($option)) {
 					$data['optionid'] = $optionid;
 					$data['optiontitle'] = $option['title'];
 					$data['marketprice'] = $option['marketprice'];
-					//新增一个weight字段测试是否将重量用回规格的重量
-                                        $data['weight'] = $option['weight'];
-					//测试打印套餐的分数
-                                        $data['productNum'] = $option['productnum'];
 					$data['sendNum'] = $option['productsn'];   //TODO  修改了逻辑，用这个字段表示邮寄次数
-					
 				} 
 			} 
 			$goods[] = $data;
-			
 		} 
-		
 		$goods = set_medias($goods, 'thumb');
 		$sendNum=0;
-		$productNum = 0;
-		
-		/*foreach ($goods as $g) {
+		foreach ($goods as $g) {
 			if ($g['isverify'] == 2) {
 				$isverify = true;
 			}
 			if($g['sendNum']>$sendNum){
-				$sendNum +=$g['sendNum'];
+				$sendNum=$g['sendNum'];
 			} 
-		} */  
-		foreach ($goods as $g) {
-			if ($g['isverify'] == 2) {
-				$isverify = true;
-			}	
-			    $total = $g['total'];	
-				$sendNum +=$g['sendNum'];						
-                $productNum +=$g['productNum'] * $total;			  
 		} 
-	
 		$member = m('member') -> getMember($openid);
-		$uid = $member['uid'];
 		$stores = array();
 		$address = false;
 		$carrier = false;
@@ -104,13 +74,12 @@ if ($_W['isajax']) {
 		if ($sale_plugin) {
 			$saleset = $sale_plugin -> getSet();
 		} 
-		
-		if ($isverify) {			
+		if ($isverify) {
 			$storeids = array();
 			foreach ($goods as $g) {
 				if (!empty($g['storeids'])) {
 					$storeids = array_merge(explode(',', $g['storeids']), $storeids);
-				} 				
+				} 
 			} 
 			if (empty($storeids)) {
 				$stores = pdo_fetchall('select * from ' . tablename('ewei_shop_store') . ' where  uniacid=:uniacid and status=1', array(':uniacid' => $_W['uniacid']));
@@ -118,59 +87,45 @@ if ($_W['isajax']) {
 				$stores = pdo_fetchall('select * from ' . tablename('ewei_shop_store') . ' where id in (' . implode(',', $storeids) . ') and uniacid=:uniacid and status=1', array(':uniacid' => $_W['uniacid']));
 			} 
 		} else {
-			$address = pdo_fetch('select id,realname,mobile,address,province,city,area from ' . tablename('ewei_shop_member_address') . ' where openid=:openid and deleted=0 and isdefault=1  and uniacid=:uniacid limit 1' , array(':uniacid' => $uniacid, ':openid' => $openid));			
+			$address = pdo_fetch('select id,realname,mobile,address,province,city,area from ' . tablename('ewei_shop_member_address') . ' where openid=:openid and deleted=0 and isdefault=1  and uniacid=:uniacid limit 1' , array(':uniacid' => $uniacid, ':openid' => $openid));
 			$carrier = false;
 			$carrier_list = array();
 			$weight = 0;
 			foreach ($goods as $g) {
-				
-				if (empty($g['issendfree'])) {					
+				if (empty($g['issendfree'])) {
 					$weight += $g['weight'] * $g['total'];
-					//$productNum += $g['productNum'];
 				} 
-				
 			} 
-			
-			
 			$dispatch = false;
 			$dispatch_list = pdo_fetchall("select id,dispatchname,dispatchtype,firstprice,firstweight,secondprice,secondweight,areas,carriers from " . tablename("ewei_shop_dispatch") . " WHERE enabled=1 and uniacid = {$_W['uniacid']}  order by displayorder desc");
-			
-			foreach ($dispatch_list as &$d) {	
-
-				$d['price'] = 0;				
-				if ($d['dispatchtype'] == 1) {					
-					$clist = unserialize($d['carriers']);					
+			foreach ($dispatch_list as &$d) {
+				$d['price'] = 0;
+				if ($d['dispatchtype'] == 1) {
+					$clist = unserialize($d['carriers']);
 					if (is_array($clist)) {
 						$carrier_list = array_merge($carrier_list, $clist);
 					} 
 					continue;
 				} 
 				$areas = unserialize($d['areas']);
-
-				if ($weight > 0) {	
-					if (!empty($address)) {							
+				if ($weight > 0) {
+					if (!empty($address)) {
 						$setprice = false;
-						if (is_array($areas) && count($areas) > 0) {							
-							foreach ($areas as $area) {								
-								$citys = explode(";", $area['citys']);							
+						if (is_array($areas) && count($areas) > 0) {
+							foreach ($areas as $area) {
+								$citys = explode(";", $area['citys']);
 								if (in_array($address['city'], $citys)) {
 									$d['price'] = m('order') -> getDispatchPrice($weight, $area);
-									if($sendNum>1){
-                                    $expressprice = m('order') -> getDispatchPrices($weight, $area);
-									}
 									$setprice = true;
 									break;
 								} 
 							} 
 						} 
-						
 						if (!$setprice) {
 							$d['price'] = m('order') -> getDispatchPrice($weight, $d);
-						}
-
+						} 
 					} else if (empty($member['city'])) {
 						$d['price'] = m('order') -> getDispatchPrice($weight, $d);
-						
 					} else if (!empty($member['city'])) {
 						$setprice = false;
 						if (is_array($areas) && count($areas) > 0) {
@@ -178,16 +133,13 @@ if ($_W['isajax']) {
 								$citys = explode(";", $areas['citys']);
 								if (in_array($member['city'], $citys)) {
 									$d['price'] = m('order') -> getDispatchPrice($weight, $area);
-									if($sendNum>1){
-									$expressprice = m('order') -> getDispatchPrices($weight, $area);
-									}																		
 									$setprice = true;
 									break;
 								} 
-							} 							
+							} 
 						} 
 						if (!$setprice) {
-							$d['price'] = m('order') -> getDispatchPrice($weight, $d);							
+							$d['price'] = m('order') -> getDispatchPrice($weight, $d);
 						} 
 					} 
 				} 
@@ -200,7 +152,6 @@ if ($_W['isajax']) {
 				$carrier = $carrier_list[0];
 			} 
 		} 
-		
 		$level = m('member') -> getLevel($openid);
 		$total = 0;
 		$goodsprice = 0;
@@ -210,7 +161,6 @@ if ($_W['isajax']) {
 		$commission_sum=0;//TODO 后改的，用于分销的总价格
 		foreach ($goods as $g) {
 			$gprice = $g['marketprice'] * $g['total'];
-			 
 			if (empty($g['isnodiscount']) && !empty($level['id'])) {
 				$price = $level['discount'] / 10 * $gprice;
 				$discountprice += ($gprice - $price);
@@ -221,22 +171,19 @@ if ($_W['isajax']) {
 			$commission_sum += $g['commission_sum'];
 			$goodsprice += $gprice;
 			$total += $g['total'];
-
-			//$productNum += $g['productNum'];
-			 
 			$deductprice += $g['deduct'];
-			//$gprice = $g['marketprice'] * $g['total'];
-			//if (empty($g['isnodiscount']) && !empty($level['id'])) {
-				//$discount =$level['discount'] / 10 * $gprice;
-				//$discountprice += ($discount);
-				//$price=$gprice-	$discount;		
-			//} else {
-				//$price = $gprice;
-			//} 
-			//$realprice += $price;
-			//$goodsprice += $gprice;
-			//$total += $g['total'];
-			//$deductprice += $g['deduct'];
+			/*$gprice = $g['marketprice'] * $g['total'];
+			if (empty($g['isnodiscount']) && !empty($level['id'])) {
+				$discount =$level['discount'] / 10 * $gprice;
+				$discountprice += ($discount);
+				$price=$gprice-	$discount;		
+			} else {
+				$price = $gprice;
+			} 
+			$realprice += $price;
+			$goodsprice += $gprice;
+			$total += $g['total'];
+			$deductprice += $g['deduct'];*/
 		}
 		if ($saleset) {
 			if (!empty($saleset['enoughfree'])) {
@@ -285,30 +232,13 @@ if ($_W['isajax']) {
 					} 
 				} 
 			} 
-
 			if ($realprice >= floatval($saleset['enoughmoney']) && floatval($saleset['enoughdeduct']) > 0) {
 				$saleset['showenough'] = true;
 				$realprice -= floatval($saleset['enoughdeduct']);
 			} 
 		} 
-
-        $gdsprice = 0;
-		$rlsprice = 0;
-       if($productNum<90 && $productNum>=1){
-         $gdsprice = $productNum * 34;
-        }
-        if($productNum<180 && $productNum>=90){
-         $gdsprice = $productNum * 30;
-        }
-        if($productNum>=180){ 
-        $gdsprice = $productNum * 26;
-        }
-
-
-
 		if (!empty($dispatch)) {
 			$realprice += $dispatch['price'];
-			$rlprice = $dispatch['price'] + $gdsprice;
 		} 
 		$deductcredit = 0;
 		$deductmoney = 0;
@@ -317,7 +247,7 @@ if ($_W['isajax']) {
 			$credit = m('member') -> getCredit($openid, 'credit1');
 			if (!empty($saleset['creditdeduct'])) {
 				$pcredit = intval($saleset['credit']);
-				$pmoney = round(floatval($saleset['money']), 2);				
+				$pmoney = round(floatval($saleset['money']), 2);
 				if ($pcredit > 0 && $pmoney > 0) {
 					if ($credit % $pcredit == 0) {
 						$deductmoney = round(intval($credit / $pcredit) * $pmoney, 2);
@@ -325,7 +255,6 @@ if ($_W['isajax']) {
 						$deductmoney = round((intval($credit / $pcredit) + 1) * $pmoney, 2);
 					} 
 				} 
-				
 				if ($deductmoney > $deductprice) {
 					$deductmoney = $deductprice;
 				} 
@@ -339,10 +268,9 @@ if ($_W['isajax']) {
 				if ($deductcredit2 > $realprice) {
 					$deductcredit2 = $realprice;
 				} 
-			} 			
+			} 
 		} 
-	show_json(1, array('member' => $member,'sendNum'=>$sendNum, 'expressprice' =>$expressprice, 'deductcredit' => $deductcredit, 'deductmoney' => $deductmoney, 'deductcredit2' => $deductcredit2, 'saleset' => $saleset, 'goods' => $goods, 'weight' => $weight, 'set' => m('common') -> getSysset('shop'), 'fromcart' => $fromcart, 'haslevel' => !empty($level['id']), 'total' => $total, 'dispatchprice' => !empty($dispatch)? number_format($dispatch['price'], 2): 0, 'totalprice' => number_format($totalprice, 2), 'goodsprice' => number_format($goodsprice, 2), 'gdsprice' => number_format($gdsprice, 2),'discountprice' => number_format($discountprice, 2), 'discount' => $level['discount'], /*'realprice' => number_format($realprice, 2),*/'realprice' => number_format($rlprice, 2), 'address' => $address, 'carrier' => $carrier, 'carrier_list' => $carrier_list, 'dispatch' => $dispatch, 'dispatch_list' => $dispatch_list, 'isverify' => $isverify, 'stores' => $stores,'productnum' => $productNum));
-		
+		show_json(1, array('member' => $member,'sendNum'=>$sendNum, 'deductcredit' => $deductcredit, 'deductmoney' => $deductmoney, 'deductcredit2' => $deductcredit2, 'saleset' => $saleset, 'goods' => $goods, 'weight' => $weight, 'set' => m('common') -> getSysset('shop'), 'fromcart' => $fromcart, 'haslevel' => !empty($level['id']), 'total' => $total, 'dispatchprice' => !empty($dispatch)? number_format($dispatch['price'], 2): 0, 'totalprice' => number_format($totalprice, 2), 'goodsprice' => number_format($goodsprice, 2), 'discountprice' => number_format($discountprice, 2), 'discount' => $level['discount'], 'realprice' => number_format($realprice, 2), 'address' => $address, 'carrier' => $carrier, 'carrier_list' => $carrier_list, 'dispatch' => $dispatch, 'dispatch_list' => $dispatch_list, 'isverify' => $isverify, 'stores' => $stores));
 	} else if ($operation == 'getdispatchprice') {
 		$totalprice = floatval($_GPC['totalprice']);
 		$addressid = intval($_GPC['addressid']);
@@ -351,9 +279,7 @@ if ($_W['isajax']) {
 		if (empty($weight)) {
 			show_json(1, array('price' => 0));
 		} 
-		
 		$address = pdo_fetch('select id,realname,mobile,address,province,city,area from ' . tablename('ewei_shop_member_address') . ' where  id=:id and openid=:openid and uniacid=:uniacid limit 1' , array(':uniacid' => $uniacid, ':openid' => $openid, ':id' => $addressid));
-		
 		$sale_plugin = p('sale');
 		$saleset = false;
 		if ($sale_plugin) {
@@ -378,7 +304,6 @@ if ($_W['isajax']) {
 		} 
 		$dispatch = pdo_fetch("select id,dispatchname,dispatchtype,firstprice,firstweight,secondprice,secondweight,areas,carriers from " . tablename("ewei_shop_dispatch") . " " . " WHERE id=:id and uniacid =:uniacid limit 1" , array(':uniacid' => $uniacid, ':id' => $dispatchid));
 		$areas = unserialize($dispatch['areas']);
-		
 		$setprice = false;
 		if (is_array($areas) && count($areas) > 0) {
 			foreach ($areas as $area) {
@@ -459,7 +384,6 @@ if ($_W['isajax']) {
 				show_json(0, '参数错误，请刷新重试');
 			} 
 			$sql = 'SELECT id as goodsid,title,commission_sum,sale_quotas, weight,total,issendfree,isnodiscount, thumb,marketprice,cash,isverify,goodssn,productsn,istime,timestart,timeend,usermaxbuy,maxbuy,unit,buylevels,buygroups,deleted,status,deduct FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
-
 			$data = pdo_fetch($sql, array(':uniacid' => $uniacid, ':id' => $goodsid));
 			if (empty($data['status']) || !empty($data['deleted'])) {
 				show_json(-1, $data['title'] . '<br/> 已下架!');
@@ -503,7 +427,7 @@ if ($_W['isajax']) {
 				} 
 			}
 			if (!empty($optionid)) {
-				$option = pdo_fetch('select id,title,productnum,marketprice,weight,costprice,goodssn,productsn,stock from ' . tablename('ewei_shop_goods_option') . ' where id=:id and goodsid=:goodsid and uniacid=:uniacid  limit 1', array(':uniacid' => $uniacid, ':goodsid' => $goodsid, ':id' => $optionid));
+				$option = pdo_fetch('select id,title,productnum,marketprice,costprice,goodssn,productsn,stock from ' . tablename('ewei_shop_goods_option') . ' where id=:id and goodsid=:goodsid and uniacid=:uniacid  limit 1', array(':uniacid' => $uniacid, ':goodsid' => $goodsid, ':id' => $optionid));
 				if (!empty($option)) {
 					/*if ($option['stock'] != -1) {
 						if (empty($option['stock'])) {
@@ -513,7 +437,6 @@ if ($_W['isajax']) {
 					$data['optionid'] = $optionid;
 					$data['optiontitle'] = $option['title'];
 					$data['marketprice'] = $option['marketprice'];
-					$data['weight'] = $option['weight'];
 					if (!empty($option['goodssn'])) {
 						$data['goodssn'] = $option['goodssn'];
 					} 
@@ -522,7 +445,7 @@ if ($_W['isajax']) {
 					}
 					//TODO 计算佣金金额
 					$data['commission_sum'] =(($option['marketprice']-$option['costprice'])*$data['commission_sum']/100);
-					$data['productNum'] = $option['productnum'];
+					//$data['productnum']=$option['productnum'];
 				} 
 			} /*else {*/
 				// TODO 判断库存是否充足
@@ -553,7 +476,7 @@ if ($_W['isajax']) {
 			}
 			$deductprice += $data['deduct'];
 			$allgoods[] = $data;
-		}
+		} 
 		if (empty($allgoods)) {
 			show_json(0, '未找到任何商品');
 		} 
@@ -564,12 +487,9 @@ if ($_W['isajax']) {
 				$deductenough = $totalprice;
 			} 
 		} 
-
-
 		$dispatchprice = 0;
 		//TODO 分批发货的次数
 		$sendNum=intval($_GPC['sendNum']);
-		$productNum = 0;
 		if ($weight > 0) {
 			$zeroprice = false;
 			if ($saleset) {
@@ -580,9 +500,6 @@ if ($_W['isajax']) {
 						if (!empty($saleset['enoughareas'])) {
 							$areas = explode(";", $saleset['enoughareas']);
 							if (!in_array($address['city'], $areas)) {
-								if($sendNum>1){
-								$expressprice = m('order') -> getDispatchPrices($weight, $area);
-								}
 								$zeroprice = true;
 							} 
 						} else {
@@ -600,9 +517,6 @@ if ($_W['isajax']) {
 							$citys = explode(";", $area['citys']);
 							if (in_array($address['city'], $citys)) {
 								$dispatchprice = m('order') -> getDispatchPrice($weight, $area);
-								if($sendNum>1){
-								$expressprice = m('order') -> getDispatchPrices($weight, $area);
-                                 }
 								$setprice = true;
 								break;
 							} 
@@ -610,39 +524,14 @@ if ($_W['isajax']) {
 					} 
 					if (!$setprice) {
 						$dispatchprice = m('order') -> getDispatchPrice($weight, $dispatch);
-						
 					} 
 				} 
 			} 
 		} 
-		
-          foreach ($allgoods as $goods) {
-			        $total = $goods['total'];
-				    $productNum += $goods['productNum'] * $total;
-		}
-        //换成用份数计算总价
-		$gdsprice = 0;
-        if($productNum<90 && $productNum>=1){
-         $gdsprice = $productNum * 34;
-          }
-         if($productNum<180 && $productNum>=90){
-         $gdsprice = $productNum * 30;
-          }
-         if($productNum>=180){ 
-        $gdsprice = $productNum * 26;
-          }
-
-
-
 		//TODO 修改了发货金额，后期还需修改
-		//$dispatchprice=($sendNum*$dispatchprice);
-		if($sendNum>1){
-		$expressprice = ($expressprice*($sendNum-1));
-		$dispatchprice=($dispatchprice+$expressprice);
-		}
+		$dispatchprice=($sendNum*$dispatchprice);
 		$totalprice -= $deductenough;
 		$totalprice += $dispatchprice;
-		$gdsprice += $dispatchprice;
 		$deductcredit = 0;
 		$deductmoney = 0;
 		$deductcredit2 = 0;
@@ -690,10 +579,8 @@ if ($_W['isajax']) {
 				$verifycode = random(8, true);
 			} 
 		}
-		
-		$order = array('uniacid' => $uniacid,'csopenid'=>$csOpenid,'productNum'=>$productNum,'sendNum'=>$sendNum, 'delivertype' =>intval($_GPC['deliverType']), 'openid' => $openid, 'ordersn' => $ordersn,'commission_sum'=>$commission_sum_all, /*'price' => $totalprice,*/'price' => $gdsprice,  'cash' => $cash, 'discountprice' => $discountprice, 'deductprice' => $deductmoney, 'deductcredit' => $deductcredit, 'deductcredit2' => $deductcredit2, 'deductenough' => $deductenough, 'status' => 0, 'paytype' => 0, 'transid' => '', 'remark' => $_GPC['remark'], 'addressid' => empty($dispatchtype)? $addressid : 0, 'goodsprice' => $gdsprice, 'dispatchprice' => $dispatchprice, 'dispatchtype' => $dispatchtype, 'dispatchid' => $dispatchid, 'carrier' => is_array($_GPC['carrier'])? iserializer($_GPC['carrier']): iserializer(array()), 'createtime' => time(), 'isverify' => $isverify ? 1 : 0, 'verifycode' => $verifycode);
-		$ordergoods = pdo_insert('ewei_shop_order', $order);
-	   
+		$order = array('uniacid' => $uniacid,'csopenid'=>$csOpenid,'sendNum'=>$sendNum, 'delivertype' =>intval($_GPC['deliverType']), 'openid' => $openid, 'ordersn' => $ordersn,'commission_sum'=>$commission_sum_all, 'price' => $totalprice, 'cash' => $cash, 'discountprice' => $discountprice, 'deductprice' => $deductmoney, 'deductcredit' => $deductcredit, 'deductcredit2' => $deductcredit2, 'deductenough' => $deductenough, 'status' => 0, 'paytype' => 0, 'transid' => '', 'remark' => $_GPC['remark'], 'addressid' => empty($dispatchtype)? $addressid : 0, 'goodsprice' => $goodsprice, 'dispatchprice' => $dispatchprice, 'dispatchtype' => $dispatchtype, 'dispatchid' => $dispatchid, 'carrier' => is_array($_GPC['carrier'])? iserializer($_GPC['carrier']): iserializer(array()), 'createtime' => time(), 'isverify' => $isverify ? 1 : 0, 'verifycode' => $verifycode);
+		pdo_insert('ewei_shop_order', $order);
 		$orderid = pdo_insertid();
 		if ($_GPC['fromcart'] == 1) {
 			$cartids = $_GPC['cartids'];
@@ -705,13 +592,13 @@ if ($_W['isajax']) {
 		} 
 		foreach ($allgoods as $goods) {
 			//TODO 新增佣金费率
-			$order_goods = array('uniacid' => $uniacid, 'orderid' => $orderid,'commission_sum' => $goods['commission_sum']*$goods['total'], 'goodsid' => $goods['goodsid'], 'price' => $goods['marketprice'] * $goods['total'], 'total' => $goods['total'], 'optionid' => $goods['optionid'], 'createtime' => time(), 'optionname' => $goods['optiontitle'], 'goodssn' => $goods['goodssn'], 'productsn' => $goods['productsn']);
+			$order_goods = array('uniacid' => $uniacid, 'orderid' => $orderid,'commission_sum' => $goods['commission_sum']* $goods['total'], 'goodsid' => $goods['goodsid'], 'price' => $goods['marketprice'] * $goods['total'], 'total' => $goods['total'], 'optionid' => $goods['optionid'], 'createtime' => time(), 'optionname' => $goods['optiontitle'], 'goodssn' => $goods['goodssn'], 'productsn' => $goods['productsn']);
 			if (empty($goods['isnodiscount']) && !empty($level['id'])) {
 				$order_goods['realprice'] = $order_goods['price'] * $level['discount'] / 10;
 			} else {
 				$order_goods['realprice'] = $order_goods['price'];
 			} 
-	            $yongjin = pdo_insert('ewei_shop_order_goods', $order_goods);
+			pdo_insert('ewei_shop_order_goods', $order_goods);
 		} 
 		if ($deductcredit > 0) {
 			$shop = m('common') -> getSysset('shop');
@@ -727,6 +614,4 @@ if ($_W['isajax']) {
 		show_json(1, array('orderid' => $orderid));
 	} 
 } 
-
 include $this -> template('order/confirm');
-

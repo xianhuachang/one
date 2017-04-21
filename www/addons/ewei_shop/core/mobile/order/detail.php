@@ -7,7 +7,6 @@ $operation = !empty($_GPC['op'])? $_GPC['op'] : 'display';
 $openid = m('user') -> getOpenid();
 $uniacid = $_W['uniacid'];
 $orderid = intval($_GPC['id']);
-//当前请求是否通过 ajax 请求 
 if ($_W['isajax']) {
 	$order = pdo_fetch('select * from ' . tablename('ewei_shop_order') . ' where id=:id and uniacid=:uniacid and openid=:openid limit 1', array(':id' => $orderid, ':uniacid' => $uniacid, ':openid' => $openid));
 	if (empty($order)) {

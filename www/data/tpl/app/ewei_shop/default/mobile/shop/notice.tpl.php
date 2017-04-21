@@ -73,9 +73,9 @@
             <div class="time"><%notice.createtime%></div>-->
             <div class="detail"></div>
         </div>
-       <script src="https://qiyukf.com/script/949319e231213aff0052a508fb9b3443.js" defer async />
+        <script src="https://qiyukf.com/script/949319e231213aff0052a508fb9b3443.js" defer async />
         <div class="consultation">我要咨询</div>   
-         <style>
+        <style>
         #YSF-BTN-HOLDER{position: fixed;height: 50px;width: 300px;left: 10%;opacity: 0;}
 		#YSF-CUSTOM-ENTRY-1{bottom: 0px;width: 300px;}
 		#YSF-CUSTOM-ENTRY-1 img{height: 50px;width: 300px;}

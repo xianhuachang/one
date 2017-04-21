@@ -38,7 +38,7 @@
 </head>
 <body>  
  <div>
-  <div class="wellcome" style="color:red;"><marquee scrollamount="5">请选择自己对应的症状进入选择， 如没有该现象无需进入做任何选择。</marquee></div>
+  <div class="wellcome"><marquee scrollamount="5">为梦想打拼的路上，有曲折，有艰辛，只要有强健的体魄，我们无惧失败。。。八年铸一品，日复一日，坚持、奋斗、创造。。。每天酵果菜谱，与您携手共创每一刻的人生精彩。您的健康，有我在！</marquee></div>
   <div class="heading">
     <h3 class="panel-title">性别选择</h3>
   </div>
@@ -69,11 +69,11 @@
     <img id="sexImg" src="../addons/lrj_guide/recouse/images/female_new.png" style="width: 50%;">
     <?php  } ?>
   </div>
- <!-- <div class="panel-bottom" style="position: fixed;bottom: 0px;width: 100%;background-color: #7F7F7F;">
+  <div class="panel-bottom" style="position: fixed;bottom: 0px;width: 100%;background-color: #7F7F7F;">
   <div class="panel-body" style="text-align: center;">
 	   <a type="submit" href="<?php  echo $this->createMobileUrl('selfinspectionresult')?>"  class="btn btn-mydefined"  >自检完毕</a>
   </div>
-  </div>-->
+  </div>
   <button id="showBox" style="display: none;" /></button>
   <div id="HBox">
 		<form onsubmit="return false;">
@@ -98,26 +98,21 @@
 		</form>
 	</div>
   <div id="member-criteria-div">
-  	<!--<h3>会员手册</h3>-->
-	<img  src="../addons/lrj_guide/recouse/images/huiyuan.png" style="width: 100%;">
+  	<h3>会员手册</h3>
   	<p>欢迎加入美丽天使健康生活馆，我们将以执着的专业为您提供完善周到的服务，带给您全新的健康维护体验。同步为您和您的家人提供全面而个性化的健康关爱，协助您选择最适合自己的健康食品，规划最合理的生活方式，用最朴实方式， 铸就健康的未来。</p>
-	<img  src="../addons/lrj_guide/recouse/images/beijing.png" style="width: 80%;">
-    <!--<h4>一、宗旨：</h4>-->
+    <h4>一、宗旨：</h4>
     <p>遵守国家法律法规，崇尚社会道德风范，努力为会员提供优先、优惠及增值的健康咨询服务。筹备开展符合客户利益需求的科学养生等互动活动，最大限度满足会员的健康需求。</p>
-	<img  src="../addons/lrj_guide/recouse/images/beijing1.png" style="width: 80%;">
-    <!--<h4>二、专业背景：</h4>-->
+    <h4>二、专业背景：</h4>
     <p> 精挑细选的有机蔬果，经过科学配伍→破壁微分→低温浓缩，独具匠心的制作工艺，我们一丝不苟，因为这是送给健康细胞的一份大礼，全为您的一日一餐，为健康细胞加油！</p>
     <p>酵果菜谱从美国远渡重洋，在国内完成了365天、５９项严谨细致的临床记录，累积了来自于不同体质的各类调理反映的宝贵经验，只为造福广大热爱健康的家人们！</p>
-    <img  src="../addons/lrj_guide/recouse/images/beijing2.png" style="width: 80%;">
-	<!--<h4>三、入会须知：</h4>-->
+    <h4>三、入会须知：</h4>
     <p>1.会员必须有产品使用的亲身经历，并乐意与他人分享者；</p>
     <p>2.入会需由本人申请（也可电话或网络加入）。会员的各项服务将按办理日期生效和延续；</p>
     <p>3.敬请提供个人真实信息，以应送货和联络之需。本公司将严格保护所有宾客的资讯；</p>
     <p>4.会员自入会之日起，即视为认可并清楚手册中的所有细则；</p>
     <p>5.未来新产品的发布及营销方案将通过美丽天使生活馆公众号统一发布，并同时生效；</p>
     <p>6.会员不得利用生活馆的平台传播有损于企业声誉的资讯及私自售卖未经审核的产品。</p>
-	<img  src="../addons/lrj_guide/recouse/images/beijing4.png" style="width: 80%;">
-    <!--<h4>四、会员资格核定 ：</h4>-->
+    <h4>四、会员资格核定 ：</h4>
     <p>客服专员对您的消费情况及基础资料进行核对。完善后将联系您，同时送达我们的敬意和祝福!</p>
     <h3 id="close-member">关闭</h3>
   </div>
@@ -165,13 +160,13 @@ function getCookie(name)
    }); 
 
  	//如果是非会员
- 	/*var isGettedVerify=false;
+ 	var isGettedVerify=false;
  	var isMember="<?php  echo $isMember;?>";
- 	var phoneReg = /^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[6-9])[0-9]{8}$/;
+ 	var phoneReg = /^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[7-9])[0-9]{8}$/;
  	var nameReg = /^[\u4E00-\u9FA5]{2,8}$/;
  	var verifyReg = /^[1-9]{4}$/;
 	if(isMember==="0"){	
- 		$("#showBox").hDialog({position: 'top',height: 300,title: '填写个人信息',beforeShow: function(){ alert('为了您的健康更全面，全程服务更完善，请填写您的个人资料,申请成为会员!'); },closeHide: false,modalHide: false,box: '#HBox',}).trigger("click");			
+ 		$("#showBox").hDialog({position: 'top',height: 300,title: '填写个人信息',beforeShow: function(){ alert('经系统检测，您是非会员，若想继续，请先注册!'); },closeHide: false,modalHide: false,box: '#HBox',}).trigger("click");			
  		var phone='';
  		$("#getVerify").on("click",function(){
  			if(isGettedVerify===false){
@@ -183,7 +178,7 @@ function getCookie(name)
  				}
  				var _this=$(this);
  				isGettedVerify=true;
- 				showTime(_this,"red",180); 
+ 				showTime(_this,"red",60); 
  				$.post(
  					"<?php  echo $this->createMobileUrl('getVerify')?>",
  					{"phone":phone},
@@ -260,7 +255,7 @@ window.onload=function(){
 		window.location.href=($_this.parent().prop('href'));	
 		});		
 	});
-}*/
+}
 </script>
 </body>
 </html>

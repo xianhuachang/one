@@ -24,7 +24,7 @@ a {text-decoration:none;}
 </style>
 <div class="order_top">
     <div class="title" onclick='history.back()'><i class='fa fa-chevron-left'></i> 推广订单(<?php  echo $ordercount;?>)</div>
-    <div class='num'>预计: +<?php  echo $commissioncount;?>分</div>
+    <div class='num'>预计: +<?php  echo $commissioncount;?>元</div>
 </div>
 <div class="order_menu">
         <div class="nav navon" style="border-left:0px;width:24%;" data-status=''>所有订单</div>
@@ -35,10 +35,10 @@ a {text-decoration:none;}
 
 <div id='container'></div>
 <script id='tpl_order' type='text/html'>
-    <%each list as orders%>
+    <%each list as order%>
   <div class="order_list">
-    <div class="left"><div class='inner'><%orders.ordersn%>(<%orders.level%>级)<br><span><%orders.createtime%></span></div></div>
-   <div class="right">+<%orders.commission%><br><span><%orders.status%></span></div>
+    <div class="left"><div class='inner'><%order.ordersn%>(<%order.level%>级)<br><span><%order.createtime%></span></div></div>
+   <div class="right">+<%order.commission%><br><span><%order.status%></span></div>
 </div>
     <%/each%>
 </script>

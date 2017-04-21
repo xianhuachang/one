@@ -11,15 +11,11 @@ if (empty($openid)) {
 $member = m('member') -> getMember($openid);
 $uniacid = $_W['uniacid'];
 $orderid = intval($_GPC['orderid']);
-
 if ($operation == 'display' && $_W['isajax']) {
 	if (empty($orderid)) {
 		show_json(0, '参数错误!');
 	} 
 	$order = pdo_fetch("select * from " . tablename('ewei_shop_order') . ' where id=:id and uniacid=:uniacid and openid=:openid limit 1' , array(':id' => $orderid, ':uniacid' => $uniacid, ':openid' => $openid));
-	
-	$productNum = $order['productNum'];
-
 	if (empty($order)) {
 		show_json(0, '订单未找到!');
 	} 
@@ -71,13 +67,10 @@ if ($operation == 'display' && $_W['isajax']) {
 	} 
 	$cash = array('success' => $order['cash'] == 1 && isset($set['pay']) && $set['pay']['cash'] == 1);
 	$returnurl = urlencode($this -> createMobileUrl('order/pay', array('orderid' => $orderid)));
-
 	show_json(1, array('order' => $order, 'set' => $set, 'credit' => $credit, 'wechat' => $wechat, 'alipay' => $alipay, 'unionpay' => $unionpay, 'cash' => $cash, 'isweixin' => is_weixin(), 'currentcredit' => $currentcredit, 'returnurl' => $returnurl));
 } else if ($operation == 'pay' && $_W['ispost']) {
 	$set = m('common') -> getSysset(array('shop', 'pay'));
 	$order = pdo_fetch("select * from " . tablename('ewei_shop_order') . ' where id=:id and uniacid=:uniacid and openid=:openid limit 1' , array(':id' => $orderid, ':uniacid' => $uniacid, ':openid' => $openid));
-	$productNum = $order['productNum'];
-
 	if (empty($order)) {
 		show_json(0, '订单未找到!');
 	} 
@@ -119,8 +112,6 @@ if ($operation == 'display' && $_W['isajax']) {
 				show_json(0, $wechat['message']);
 			} 
 		} 
-		$shop = m('common') -> getSysset('shop');
-	    m('member') -> setCredit($openid, 'credit1', $productNum, array('0', $shop['name'] . "订单号: {$ordersn}"));
 		if (!$wechat['success']) {
 			show_json(0, '微信支付参数错误!');
 		} 
@@ -158,11 +149,8 @@ if ($operation == 'display' && $_W['isajax']) {
 		} 
 		show_json(1, array('alipay' => $alipay));
 	} 
-	
 } else if ($operation == 'complete' && $_W['ispost']) {
 	$order = pdo_fetch("select * from " . tablename('ewei_shop_order') . ' where id=:id and uniacid=:uniacid and openid=:openid limit 1' , array(':id' => $orderid, ':uniacid' => $uniacid, ':openid' => $openid));
-      	$productNum = $order['productNum'];
-	    
 	if (empty($order)) {
 		show_json(0, '订单未找到!');
 	} 
@@ -205,12 +193,10 @@ if ($operation == 'display' && $_W['isajax']) {
 			show_json(0, $result['message']);
 		} 
 		$record = array();
-		$record['status'] = '1';        
+		$record['status'] = '1';
 		$record['type'] = 'cash';
 		pdo_update('core_paylog', $record, array('plid' => $log['plid']));
 		pdo_update('ewei_shop_order', array('paytype' => 1), array('id' => $order['id']));
-		$shop = m('common') -> getSysset('shop');
-	    m('member') -> setCredit($openid, 'credit1', $productNum, array('0', $shop['name'] . "订单号: {$ordersn}"));
 		$ret = array();
 		$ret['result'] = 'success';
 		$ret['type'] = $log['type'];
@@ -254,7 +240,6 @@ if ($operation == 'display' && $_W['isajax']) {
 		$ret['deduct'] = intval($_GPC['deduct']) == 1;
 		$this -> payResult($ret);
 	} 
-	
 } else if ($operation == 'return') {
 	$tid = $_GPC['out_trade_no'];
 	$log = pdo_fetch('SELECT * FROM ' . tablename('core_paylog') . ' WHERE `uniacid`=:uniacid AND `module`=:module AND `tid`=:tid limit 1', array(':uniacid' => $uniacid, ':module' => 'ewei_shop', ':tid' => $tid));
@@ -280,6 +265,5 @@ if ($operation == 'display' && $_W['isajax']) {
 	die('<div style="width:94%;padding:0 3%px;font-size:24px;">支付成功, 请关闭到浏览器, 返回到微信点击返回!</div>');
 } 
 if ($operation == 'display') {
-
 	include $this -> template('order/pay');
 } 

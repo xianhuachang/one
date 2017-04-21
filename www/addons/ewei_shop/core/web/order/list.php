@@ -287,7 +287,6 @@ if ($operation == 'display') {
 		$agents = p('commission') -> getAgents($id);
 	}
 	$express_result=getList($item['express'],$item['expresssn']);
-    /*
 	if(empty($express_result)){
 		$express_detail="暂时没有查询物流信息";
 	}else{
@@ -295,7 +294,6 @@ if ($operation == 'display') {
 			$express_detail.=($e."<br />");
 		}
 	}
-	*/
 	load() -> func('tpl');
 	include $this -> template('web/order/detail');
 	exit;
@@ -363,8 +361,6 @@ exit;*/
 	$id = intval($_GPC['id']);
 	$item = pdo_fetch("SELECT * FROM " . tablename('ewei_shop_order') . " WHERE id = :id and uniacid=:uniacid", array(':id' => $id, ':uniacid' => $_W['uniacid']));
 	$shopset = m('common') -> getSysset('shop');
-	//$productNum = $item['productNum'];
-	//var_dump($productNum);die;
 	if (empty($item)) {
 		message("抱歉，订单不存在!", referer(), "error");
 	} 
@@ -554,17 +550,7 @@ function order_list_cancelpay($item) {
 function order_list_confirmpay($item) {
 	global $_W, $_GPC;
 	ca('order.op.pay');
-
-    $items = pdo_fetch("SELECT productNum,openid,ordersn FROM " . tablename('ewei_shop_order') . " WHERE id = :id and uniacid=:uniacid", array(':id' => $item['id'], ':uniacid' => $_W['uniacid']));
-    $openid = $items['openid'];
-    $productNum = $items['productNum'];
-	$ordersn = $items['ordersn'];
-	$shop = m('common') -> getSysset('shop');
-	//var_dump($shop);die;
-	m('member') -> setCredit($openid, 'credit1', $productNum, array('0', $shop['name'] . "订单号: {$ordersn}"));
-
-	pdo_update('ewei_shop_order', array('status' => 1, 'paytype' => 11, 'paytime' => time(), 'remark' => $_GPC['remark']), array('id' => $item['id'], 'uniacid' => $_W['uniacid']));	
-
+	pdo_update('ewei_shop_order', array('status' => 1, 'paytype' => 11, 'paytime' => time(), 'remark' => $_GPC['remark']), array('id' => $item['id'], 'uniacid' => $_W['uniacid']));
 	m('order') -> setStocksAndCredits($item['id'], 1);
 	m('notice') -> sendOrderMessage($item['id']);
 	if (p('commission')) {
@@ -642,14 +628,10 @@ function order_list_refund($item) {
 
 //TODO 获取快递信息
 function getList($express, $expresssn) {
-	//$url = "https://m.kuaidi100.com/wap_result.jsp?rand=" . time() . "&id={$express}&fromWeb=null&postid={$expresssn}";
-	$url="https://m.kuaidi100.com/result.jsp?com={$express}&nu={$expresssn}";
-	return $url;
-	//$url="https://m.kuaidi100.com/index_all.html?type={$express}&postid={$expresssn}#result";
+	$url = "http://wap.kuaidi100.com/wap_result.jsp?rand=" . time() . "&id={$express}&fromWeb=null&postid={$expresssn}";
 	load() -> func('communication');
 	$resp = ihttp_request($url);
 	$content = $resp['content'];
-	//echo $content;die;
 	if (empty($content)) {
 		return array();
 	} 

@@ -18,11 +18,6 @@ class Lrj_guideModuleSite extends WeModuleSite {
 	//TODO 商品表
 	private $psize = 15;
 	
-		//TODO 引导封面图 2017.03.23;===2017.03.27恢复备份
-	public function doMobileSelfinspectionGuide() {
-		include $this -> template('selfinspectionguide');
-	}
-
 		//TODO 准会员测试
 	public function doMobileAssociate() {
 		global $_W,$_GPC;
@@ -57,7 +52,7 @@ class Lrj_guideModuleSite extends WeModuleSite {
 		if(isset($_POST['phone'])){
 			//判断是否符合手机格式
 			$phone=$_POST['phone'];
-			if(!preg_match('/^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[6-9])[0-9]{8}$/', $phone)){
+			if(!preg_match('/^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[7-9])[0-9]{8}$/', $phone)){
 				echo json_encode(array('status'=>101,'msg'=>'请输入正确的手机号码'));
 				exit;
 			}
@@ -78,7 +73,7 @@ class Lrj_guideModuleSite extends WeModuleSite {
 			}
 			require_once 'model/sms.php';
 			$sms=new Sms();
-			$result = $sms->sendSMS($phone, "【酵果菜谱】，您的验证码是{$verify},此验证码3分钟内有效,请珍惜每一个验证码,非本人操作，请忽略，谢谢！",'true');
+			$result = $sms->sendSMS($phone, "【酵果菜谱】，您的验证码是{$verify},3分钟内有效,请珍惜每一个验证码,非本人操作，请忽略，谢谢！",'true');
 			$result = $sms->execResult($result);
 			if(isset($result[1]) && $result[1]==0){
 				$_SESSION['verify']=$verify.'_'.time();
@@ -89,8 +84,7 @@ class Lrj_guideModuleSite extends WeModuleSite {
 			}else{
 				//TODO 写LOG
 				file_put_contents("error.txt",base64_encode($result[1])."    ".date('Y-m-d h:i:s')."  \r\n",FILE_APPEND);
-				//echo json_encode(array('status'=>108,'msg'=>'验证码系统异常，请稍候再试，谢谢！'));
-				echo json_encode(array('status'=>108,'msg'=>'系统还未正式运营,验证码系统暂时不开放，欢迎开通后来测试，谢谢！'));
+				echo json_encode(array('status'=>108,'msg'=>'验证码系统异常，请稍候再试，谢谢！'));
 				exit;
 			}
 		}
@@ -104,19 +98,19 @@ class Lrj_guideModuleSite extends WeModuleSite {
 		if(isset($_POST['phone'])){
 			//判断是否符合手机格式
 			$phone=$_POST['phone'];
-			if(!preg_match('/^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[6-9])[0-9]{8}$/', $phone)){
+			if(!preg_match('/^0{0,1}(13[0-9]|15[0-9]|153|156|180|18[7-9])[0-9]{8}$/', $phone)){
 				echo json_encode(array('status'=>103,'msg'=>'请输入正确的手机号码'));
 				exit;
 			}
 			//判断是否符合验证码格式
 			$verify=$_POST['verify'];
 			if(empty($_SESSION['verify'])){
-				echo json_encode(array('status'=>104,'msg'=>'请先获取验证码,注意只有5次机会！！！'));
+				echo json_encode(array('status'=>104,'msg'=>'请先获取验证码,注意只有3次机会！！！'));
 				exit;
 			}else{
 				list($session_verify,$createTime)=explode('_', $_SESSION['verify']);
 				if($verify!=$session_verify || (time()>$createTime+60*3)){
-					echo json_encode(array('status'=>104,'msg'=>'验证码已过期,请重新获取,注意只有5次机会！！！'));
+					echo json_encode(array('status'=>104,'msg'=>'验证码已过期,请重新获取,注意只有3次机会！！！'));
 					exit;
 				}
 			}
@@ -535,53 +529,33 @@ class Lrj_guideModuleSite extends WeModuleSite {
 				}else{
 					//TODO 小测试
 					$data=array(
-							array(1=>'没有','偶尔','经常'),
-							array(1=>'没有','偶尔','经常'),
-							array(1=>'还好，没有变','近三个月','一直都很差'),
-							array(1=>'没有','偶尔（因气候变化、疲劳等）','经常（常期性）'),
-							array(1=>'没有','偶尔','经常'),
-						    array(1=>'没有','偶尔','容易且经常'),
-						    array(1=>'没有','偶尔','经常'),
-						    array(1=>'很少(一年一、二次)','偶尔（包括季节变化）','经常（尤其换季）'),
-						    array(1=>'正常','偶尔差(忙碌、环境影响…)','经常觉得没有食欲'),
-						    array(1=>'没有(每天均有1-2次)','偶尔短间(一星期2-3次)','经常'),
-						    array(1=>'正常(约PM11:00-AM7:00)','不易入睡、睡不沉、醒来还想睡','难入睡、经常睡眠中断、不易睡足8小时'),
-						    array(1=>'容易愈合','不容易愈合','容易化脓'),
-						    array(1=>'记忆力还好','已有半年以上','经常如此'),
-						    array(1=>'可以集中','偶尔（忙碌、紧张）','即使想专注都不容易'),
-						    array(1=>'一般还好，只要有充足休息','季节性，特定期的疲倦及易累','经常性耐力不足'),					
-							array(1=>'无此现象','最近偶尔','经常性')
+							array(1=>'2点钟后','凌晨1-2点','11-12点','11点前'),
+							array(1=>'睡不稳，时醒时睡','有梦且梦境清晰','有梦，醒来不记得','深度睡眠，醒后精神好'),
+							array(1=>'经常','偶尔','有，只在冬天','从不'),
+							array(1=>'没规律，不好说','不保证每天有','每天3次以上','每天1-2次，畅顺'),
+							array(1=>'一年4次以上，10天以上康复/两年以上没有任何感冒现象','一年2~4次，10天以上康复','一年3~4次，一周左右康复','一年1~2次，一周左右康复'),
+							array(1=>'辣','偏咸/甜','油多一点','清淡')
 						);
 						
 					$selectedOption=array_filter(explode('_', $member['symptom_desc']));
-					$sorce=$selectedOption[0]+$selectedOption[1]+$selectedOption[2]+$selectedOption[3]+$selectedOption[4]+$selectedOption[5]+$selectedOption[6]+$selectedOption[7]+$selectedOption[8]+$selectedOption[9]+$selectedOption[10]+$selectedOption[11]+$selectedOption[12]+$selectedOption[13]+$selectedOption[14]+$selectedOption[15];
+					$sorce=$selectedOption[0]+$selectedOption[1]+$selectedOption[2]+$selectedOption[3]+$selectedOption[4]+($selectedOption[5]==4 ?4:1);
 					$appellation='';
-					if($sorce>=32 && $sorce<=48){
-						$appellation=("很遗憾您获得'逆流“勇士”'称号!\n您是一个很刚性的个体，目前初始健康信号很弱，体质酸化。平时记得多关爱自己，诚邀您进入整体健康扫描，回归健康轨道！");
-					}else if($sorce>=24 && $sorce<=32){
-						$appellation=("很遗憾您获得'亚健康代言人'称号!\n您目前处于明显亚健康状态，趁系统机能还有机会回归正轨，赶紧进入健康扫描，查找问题的所在并扭转下滑趋势。");
-					}else if($sorce>=18 && $sorce<=24){
-						$appellation=("恭喜您获得'健康“变色龙”'称号!\n您的亚健康状态模式已经开启，留意健康动态并及时修正，甩掉亚健康的尾巴！快去进行健康扫描，恢复健康本色！");
+					if($sorce>=21 && $sorce<=24){
+						$appellation=("恭喜您获得'健康达人'称号!<br/>您现在的生活模式对健康有帮助，继续保持！为让身体得到全面呵护，请进入会员专属的“健康扫描”，让健康无死角！");
+					}else if($sorce>=16 && $sorce<=20){
+						$appellation=("恭喜您获得'健康渐变者'称号!<br/>您的亚健康状态模式已经开启，留意健康动态并及时修正，甩掉亚健康的尾巴！快去进行健康扫描，恢复健康本色！");
+					}else if($sorce>=11 && $sorce<=15){
+						$appellation=("很遗憾您获得'亚健康代言人'称号!<br/>您目前处于明显亚健康状态，趁系统机能还有机会回归正轨，赶紧进入健康扫描，查找问题的所在并扭转下滑趋势。");
 					}else{
-						$appellation=("恭喜您获得'健康达人'称号!\n您现在的健康还有些资本，继续保持！为让身体面对未来的衰退，请进入会员专属的“健康扫描”，让健康无死角！");
+						$appellation=("很遗憾您获得'逆流勇士'称号!<br/>您是一个很刚性的个体，目前初始健康信号有点弱哦。平时记得多关爱自己，诚邀您进入整体健康扫描，回归健康轨道！");
 					}
 					$reportsDetail=<<<EOF
-					<p>1、口腔/身体异味:　　　　<b>{$data[0][$selectedOption[0]]}</b></p>
-					<p>2、牙龈出血:　　　　<b>{$data[1][$selectedOption[1]]}</b></p>
-					<p>3、皮肤变差（暗沉、粗糙）:　　<b>{$data[2][$selectedOption[2]]}</b></p>
-					<p>4、腰酸背疼:　　　　　　<b>{$data[3][$selectedOption[3]]}</b></p>
-					<p>5、关节疼痛:　　　　	  <b>{$data[4][$selectedOption[4]]}</b></p>
-					<p>6、手脚、颈、背、头顶冰冷:　　　　	  <b>{$data[5][$selectedOption[5]]}</b></p>
-					<p>7、头及肩颈疼痛:　　　　	  <b>{$data[6][$selectedOption[6]]}</b></p>
-					<p>8、感冒:　　　　	  <b>{$data[7][$selectedOption[7]]}</b></p>
-					<p>9、食欲:　　　　	  <b>{$data[8][$selectedOption[8]]}</b></p>
-					<p>10、便秘:　　　　	  <b>{$data[9][$selectedOption[9]]}</b></p>
-					<p>11、睡眠品质:　　　　	  <b>{$data[10][$selectedOption[10]]}</b></p>
-					<p>12、伤口:　　　　	  <b>{$data[11][$selectedOption[11]]}</b></p>
-					<p>13、容易健忘（记忆力差）:　　　　	  <b>{$data[12][$selectedOption[12]]}</b></p>
-					<p>14、注意力不集中:　　　　	  <b>{$data[13][$selectedOption[13]]}</b></p>
-					<p>15、常觉疲劳、易累:　　　　	  <b>{$data[14][$selectedOption[14]]}</b></p>
-					<p>16、情绪不稳定、容易变得易臊易怒:　　　　<b>{$data[15][$selectedOption[15]]}</b></p>
+					<p>1、晚上通常几点入睡:　　　　<b>{$data[0][$selectedOption[0]]}</b></p>
+					<p>2、您的睡眠品质如何:　　　　<b>{$data[1][$selectedOption[1]]}</b></p>
+					<p>3、是否有手脚冰凉的状况:　　<b>{$data[2][$selectedOption[2]]}</b></p>
+					<p>4、您的排便情况:　　　　　　<b>{$data[3][$selectedOption[3]]}</b></p>
+					<p>5、您的感冒情况:　　　　	  <b>{$data[4][$selectedOption[4]]}</b></p>
+					<p>6、您平常喜欢的口味:　　　　<b>{$data[5][$selectedOption[5]]}</b></p>
 					<h3>成绩({$sorce}分):</h3>
 					<p>{$appellation}</p>
 EOF;

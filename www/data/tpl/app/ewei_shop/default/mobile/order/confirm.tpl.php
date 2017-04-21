@@ -304,20 +304,14 @@
         <input type="hidden" id="sendNum" value="<%sendNum%>"/>
         <input type="radio" id="deliverTypeAll" style="background:lightgreen" checked value="1"/><label for="deliverTypeAll" style="margin-left:5px">整批发货　</label>
         <input type="radio" id="deliverTypeSplit" style="background:gray" value="2"/><label for="deliverTypeSplit" style="margin-left:5px">分<%sendNum%>批发货　</label>
-		
-       <!--  <div class="text">共 <%total%> 个规格的商品 合计：<span style="color:#ff771b;">￥<span class='goodsprice' style="color:#ff771b;"><%goodsprice%></span></span></div>-->
-		 <div class="text" >共 <%productnum%> 件商品 享受折扣后：<span style="color:#ff771b;">￥<span class='gdsprice' style="color:#ff771b;"><%gdsprice%></span></span></div>
+        <div class="text">共 <%total%> 件商品 合计：<span style="color:#ff771b;">￥<span class='goodsprice' style="color:#ff771b;"><%goodsprice%></span></span></div>
     </div>
     <div class="addorder_price" >
         <input type="hidden" id="weight" value="<%weight%>" />
         <div class="price" style="border:none;">
-           <!-- <div class="line" style="line-height:26px;">商品金额<span>￥<span class='goodsprice'><%goodsprice%></span></span></div>-->
-			 <div class="line" style="line-height:26px;">商品金额<span>￥<span class='gdsprice'><%gdsprice%></span></span></div>
-            <div class="line" style="line-height:26px;">+运费<span>￥<span id="totalFee" class='dispatchprice'><%dispatchprice%></span></span></div>			
-			<%if sendNum>1%>
-            <div class="line" style="line-height:26px; display:none;">+分批首重运费<span>￥<label for="deliverTypeAll" style="margin-left:5px" id="expressprice"><%expressprice%></label></span></div>
-			<%/if%>
-			
+            <div class="line" style="line-height:26px;">商品金额<span>￥<span class='goodsprice'><%goodsprice%></span></span></div>
+           
+            <div class="line" style="line-height:26px;">+运费<span>￥<span id="totalFee" class='dispatchprice'><%dispatchprice%></span></span></div>
             <%if discountprice>0%>
             <div class="line" style="line-height:26px;">-会员折扣(<%discount%>折)<span>-￥<span class='discountprice'><%discountprice%></span></span></div>
             <%/if%>
@@ -363,10 +357,11 @@ var fromcart = 0;
 
     
         fromcart = json.result.fromcart;
-         
+        
+ 
         if (json.result.carrier_list.length > 0) {
              
-            //选择快递或自提
+            //选择快递或字提
             $('.addorder_nav .nav').click(function() {
                 var nav = $(this).data('nav');
                 $('.addorder_nav .nav').removeClass('selected');
@@ -388,6 +383,7 @@ var fromcart = 0;
             //选择自提
             $('#carrier_select').click(function() {
                 json.result.selectedCarrierIndex = $("#carrierindex").val();
+
                 $('#carrier_container').html(tpl('tpl_carrier_list', json.result));
                 $(".choose_carrier").animate({right: "0px"}, 200);
                 $('.carrier').click(function() {
@@ -401,27 +397,18 @@ var fromcart = 0;
             })
         }
         var sendNum=1;
-		var expressprice=0;
-		
         //TODO 选择发货类型，修改运费
 		$("#deliverTypeSplit").on("click",function(){
 			sendNum=$("#sendNum").val();
-		    expressprice=$("#expressprice").val();
-            var expressprice=$("#expressprice").text();			
 			var dispatchprice=$("#dispatchprice").text();
-			var expressprices=parseFloat((sendNum-1)*expressprice).toFixed(2);
-			//var totalFee=parseFloat(dispatchprice/sendNum).toFixed(2);
-			var totalFee=(parseFloat(dispatchprice)+parseFloat(expressprices)).toFixed(2);
+			var totalFee=parseFloat(sendNum*dispatchprice).toFixed(2);
 			$("#totalFee").text(totalFee);
 			calctotalprice();
 		});
-		
 		$("#deliverTypeAll").on("click",function(){
 			sendNum=1;
-
 			var dispatchprice=$("#dispatchprice").text();
 			var totalFee=parseFloat(dispatchprice).toFixed(2);
-			
 			$("#totalFee").text(totalFee);
 			calctotalprice();
 		});
@@ -527,14 +514,12 @@ var fromcart = 0;
                   calctotalprice();
                   return;
             }
-            //var goodsprice = parseFloat($('.goodsprice').html().replace(',',''));
-		   var gdsprice = parseFloat($('.gdsprice').html().replace(',',''));
+            var goodsprice = parseFloat($('.goodsprice').html().replace(',',''));
             var discountprice =0;
             if($('.discountprice').length>0){
                  discountprice = parseFloat($(".discountprice").html().replace(',',''));
             }
-            //totalprice = goodsprice - discountprice;
-			totalprice = gdsprice - discountprice;
+            totalprice = goodsprice - discountprice;
             //重新获取运费
             core.json('order/confirm', {
                 op: 'getdispatchprice',
@@ -594,11 +579,9 @@ var fromcart = 0;
 		
         //计算总价
         function calctotalprice() {
-           // var goodsprice = parseFloat($('.goodsprice').html().replace(',',''));
-			var gdsprice = parseFloat($('.gdsprice').html().replace(',',''));
+            var goodsprice = parseFloat($('.goodsprice').html().replace(',',''));
             //var dispatchprice = parseFloat($(".dispatchprice").html().replace(',',''));
             var dispatchprice = parseFloat($("#totalFee").html().replace(',',''));
-			//var expressprice = parseFloat($("#expressprice").html().replace(',',''));
             var discountprice =0;
             if($('.discountprice').length>0){
                  discountprice = parseFloat($(".discountprice").html().replace(',',''));
@@ -607,8 +590,7 @@ var fromcart = 0;
             if($("#deductenough_money").length>0){
                  enoughprice = parseFloat($("#deductenough_money").html().replace(',',''));
             }
-            //var totalprice = goodsprice + dispatchprice - discountprice - enoughprice;    
-			var totalprice = gdsprice + dispatchprice - discountprice - enoughprice;    
+            var totalprice = goodsprice + dispatchprice - discountprice - enoughprice;           
             var deductprice = 0;
             if($("#deductcredit").length>0){
                 if($("#deductcredit").attr('on')=='1'){
@@ -715,7 +697,6 @@ var fromcart = 0;
                 'op': 'create',
                 'goods': goods,
                 'sendNum':sendNum,
-				'expressprice':expressprice,
                 'customPhone':customPhone,
                 'deliverType': $("#deliverType").val(),
                 'dispatchtype': $("#dispatchtype").val(),
@@ -759,7 +740,7 @@ var fromcart = 0;
                 		alert("生成订单成功!");
                 		location.href = "<?php  echo $this->createMobileUrl('member')?>";
                 	}else{
-                		location.href = "<?php  echo $this->createMobileUrl('order/pay')?>&orderid=" + create_json.result.orderid +"&openid=<?php  echo $openid;?>";						
+                		location.href = "<?php  echo $this->createMobileUrl('order/pay')?>&orderid=" + create_json.result.orderid +"&openid=<?php  echo $openid;?>";	
                 	}      
                 }  else if (create_json.status == -1) {
                      $('.paysub').html('确认订单').removeAttr('submitting');

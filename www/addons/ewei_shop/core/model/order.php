@@ -3,19 +3,14 @@ if (!defined('IN_IA')) {
 	exit('Access Denied');
 } 
 class Ewei_DShop_Order {
-	 
 	function getDispatchPrice($weight, $d) {
 		if (empty($d)) {
 			return 0 ;
 		} 
-		
-        //$premium = $d['firstprice'] - $d['secondprice'];	
-        //var_dump($this->expressprice);die;         
 		$price = 0;
 		if ($weight <= $d['firstweight']) {
 			$price = intval($d['firstprice']);
 		} else {
-			
 			$price = intval($d['firstprice']);
 			$secondweight = $weight - intval($d['firstweight']);
 			$dsecondweight = intval($d['secondweight']) <= 0?1:intval($d['secondweight']);
@@ -27,30 +22,8 @@ class Ewei_DShop_Order {
 			} 
 			$price += $secondprice;
 		} 
-		return $price;		
+		return $price;
 	} 
-
-
-
-   function getDispatchPrices($weight, $d) {
-		if (empty($d)) {
-			return 0 ;
-		} 
-		
-        $premium = $d['firstprice'] - $d['secondprice'];	
-        //var_dump($premium);die;         
-		return $premium;		
-	} 
-
-
-
-
-
-
-
-
-
-
 	public function payResult($params) {
 		global $_W;
 		$fee = intval($params['fee']);

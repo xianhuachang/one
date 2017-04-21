@@ -1,5 +1,5 @@
 <?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('common/header', TEMPLATE_INCLUDEPATH)) : (include template('common/header', TEMPLATE_INCLUDEPATH));?>
-<title>积分明细</title>
+<title>佣金明细</title>
 <style type="text/css">
 body {margin:0px; background:#eee; font-family:'微软雅黑'; -moz-appearance:none;}
 a {text-decoration:none;}
@@ -24,15 +24,15 @@ a {text-decoration:none;}
 </style>
 
 <div class="log_top">
-       <div class="title" onclick='history.back()'><i class='fa fa-chevron-left'></i> 积分明细(<span id='total'></span>)</div>
-    <div class='num'>预计积分: +<span id='commissioncount'></span>分</div>
+       <div class="title" onclick='history.back()'><i class='fa fa-chevron-left'></i> 佣金明细(<span id='total'></span>)</div>
+    <div class='num'>预计佣金: +<span id='commissioncount'></span>元</div>
 </div>
  
 <div class="log_menu">
         <div class="nav navon" style="border-left:0px;width:18%;" data-status=''>全部</div>
         <div class="nav"  data-status='1'>待审核</div>
-        <div class="nav"  data-status='2'>待兑换</div>
-        <div class="nav"  data-status='3'>已兑换</div>
+        <div class="nav"  data-status='2'>待打款</div>
+        <div class="nav"  data-status='3'>已打款</div>
         <div class="nav"  data-status='-1'>无效</div>
 </div>
 <div id='container'></div>
@@ -44,10 +44,10 @@ a {text-decoration:none;}
   <div class="log_list"
        data-applyid='<%log.id%>'>
     <div class="left"><div class='inner'>编号: <%log.applyno%><br><span>
-                申请积分: <%log.commission%> 
+                申请佣金: <%log.commission%> 
                 <%if log.status==1%>申请时间:<%/if%>
                 <%if log.status==2%>审核时间:<%/if%>
-                <%if log.status==3%>已兑换时间:<%/if%>
+                <%if log.status==3%>打款时间:<%/if%>
                 <%if log.status==-1%>无效时间:<%/if%>
                 
                 <%log.dealtime%></span></div></div>
@@ -56,7 +56,7 @@ a {text-decoration:none;}
     <%/each%>
 </script>
 <script id='tpl_empty' type='text/html'>
-    <div class="log_no"><i class="fa fa-file-text-o" style="font-size:100px;"></i><br><br>c<span style="line-height:18px; font-size:16px;">您还没有相关积分明细~</span></div>
+    <div class="log_no"><i class="fa fa-file-text-o" style="font-size:100px;"></i><br><br>c<span style="line-height:18px; font-size:16px;">您还没有相关佣金明细~</span></div>
 </script>
 
 <script language="javascript">

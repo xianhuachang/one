@@ -26,12 +26,6 @@ ul,li {padding:0px; margin:0px;}
 
 .good_speci {height:44px; width:94%; overflow: hidden; background:#fff; padding:0px 3%; margin-top:14px; border-bottom:1px solid #e2e2e2; border-top:1px solid #e2e2e2; line-height:44px; color:#666; font-size:14px;}
 
-.good_shops {height:59px; width:94%; background:#fff; padding:0px 3%; margin-top:14px; border-bottom:1px solid #e2e2e2; border-top:1px solid #e2e2e2;}
-.good_shops .shops2 {height:59px; width:100%; padding:10px 0px;}
-.good_shops .shops2 .subs1 {height:37px; width:47%; float:left; border:1px solid #ccc; border-radius:5px; text-align:center; line-height:37px; font-size:16px; color:#999;}
-.good_shops .shops2 .subs2 {height:37px; width:47%; float:right; border:1px solid #ccc; border-radius:5px; text-align:center; line-height:37px; font-size:16px; color:#999;}
-
-
 .good_shop {height:130px; width:94%; background:#fff; padding:0px 3%; margin-top:14px; border-bottom:1px solid #e2e2e2; border-top:1px solid #e2e2e2;}
 .good_shop .shop1 {height:50px; width:100%; padding:10px 0px; border-bottom:1px solid #e2e2e2;}
 .good_shop .shop1 img {height:50px; width:50px; margin-right:10px; float:left;}
@@ -132,7 +126,7 @@ div.flicking_con a.on{background-position:0 -9px}
                    <div class="price">￥<span id='option_price'><%goods.marketprice%></span></div>
                    <div class="stock">库存:<span id='option_stock'><%goods.sale_quotas%></span>件</span> </div>
                     <%if goods.hasoption!='0'%>
-                   <div class="option">请选择规格(目前只推出鲜果型)</div>
+                   <div class="option">请选择规格</div>
                    <%/if%>
              </div>
             <div class="close" onClick="choose2(true)"><i class="fa fa-remove-o"></i></div>
@@ -191,11 +185,10 @@ div.flicking_con a.on{background-position:0 -9px}
         <%/if%>
         <div class="price">￥<d id='marketprice'>
                 <%if goods.minprice !=goods.maxprice%>
-                <%goods.minprice%>/份/450ml <!-- - <%goods.maxprice%>-->
+                <%goods.minprice%> - <%goods.maxprice%>
                 <%else%>
                 <%goods.marketprice%>
                 <%/if%>
-				(下单有优惠)
             </d><br>
             <span id='productpricecontainer'>
                 市场价￥<span id='productprice'><%goods.productprice%></span></span>
@@ -206,8 +199,7 @@ div.flicking_con a.on{background-position:0 -9px}
         	<!--<span class="red">* 此产品不支持7天退货</span>-->
         	</div>
             <div class='right'>
-                 <span id="stockcontainer">库存:<span id="stock"><%goods.sale_quotas%></span></span> 销量:<%goods.sales%><%goods.unit%>
-				 </div>
+                 <span id="stockcontainer">库存:<span id="stock"><%goods.sale_quotas%></span></span> 销量:<%goods.sales%><%goods.unit%></div>
             </div>
        
       <%if level.id && goods.isnodiscount=='0'%>
@@ -264,7 +256,7 @@ div.flicking_con a.on{background-position:0 -9px}
      <%/if%>
       </div>
      <%/if%>
-    <div class="good_speci" <%if goods.canbuy && goods.total!=0 && goods.timebuy=='0' && goods.userbuy=='1'  && goods.groupbuy=='1'  && goods.levelbuy=='1'%> <%/if%>><!--onClick="choose()"--> 
+    <div class="good_speci" <%if goods.canbuy && goods.total!=0 && goods.timebuy=='0' && goods.userbuy=='1'  && goods.groupbuy=='1'  && goods.levelbuy=='1'%> onClick="choose()"<%/if%>>
         <%if goods.canbuy%>
             <%if goods.istime=='1'%>
                   <%if goods.timebuy=='0'%><span id="optiondiv">请选择商品规格及数量</span><%/if%>
@@ -279,7 +271,7 @@ div.flicking_con a.on{background-position:0 -9px}
                           <span>您不能购买此商品,请联系客服</span>
                         <%else%>
                             <%if goods.total!=0%>
-                            <span id="optiondiv">提示：下单前请选择商品规格及数量</span>
+                            <span id="optiondiv">请选择商品规格及数量</span>
                              <%else%>
                               库存不足，无法购买
                            <%/if%>
@@ -291,18 +283,7 @@ div.flicking_con a.on{background-position:0 -9px}
         <%else%>
             商品已下架
         <%/if%>
-      <!-- <i class="fa fa-angle-right" style="float:right; line-height:44px; font-size:26px;"></i>-->
-	   </div>
-
-	  
-        <div class="good_shops">
-        <div class="shops2">
-            <div class="subs1" onclick="location.href='{php echo $this->createMobileUrl('shop/detail')}&id=<%goods.Backid%>'">看上一个商品</div>
-            <div class="subs2" onclick="location.href='{php echo $this->createMobileUrl('shop/detail')}&id=<%goods.Frontid%>'"> 看下一个商品</div>
-        </div>
-    </div>
-
-
+       <i class="fa fa-angle-right" style="float:right; line-height:44px; font-size:26px;"></i></div>
     <div class="good_shop">
         <div class="shop1" onclick="location.href='<%shop.url%>'">
         <img src="<%shop.logo%>">
